@@ -1,0 +1,12 @@
+
+State Machine - |DE10_Lite|pulse_gen:I_PulseGen_BTN2|state
+Name state.ST_WAIT state.ST_PULSE state.ST_IDLE 
+state.ST_IDLE 0 0 0 
+state.ST_PULSE 0 1 1 
+state.ST_WAIT 1 0 1 
+
+State Machine - |DE10_Lite|pulse_gen:I_PulseGen_BTN0|state
+Name state.ST_WAIT state.ST_PULSE state.ST_IDLE 
+state.ST_IDLE 0 0 0 
+state.ST_PULSE 0 1 1 
+state.ST_WAIT 1 0 1 
