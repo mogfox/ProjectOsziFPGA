@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences>
  <debug showDebugMenu="0" />
- <systemtable filter="unnamed.clk" showClockDomains="1" showResetDomains="0">
+ <systemtable filter="Ch1ADC.clk" showClockDomains="1" showResetDomains="0">
   <columns>
    <connections preferredWidth="31" />
    <irq preferredWidth="34" />
@@ -9,7 +9,7 @@
   </columns>
  </systemtable>
  <library expandedCategories="Library,Project" />
- <window width="1938" height="1060" x="-9" y="-9" />
+ <window width="1552" height="850" x="-8" y="-8" />
  <generation synthesis="VHDL" />
  <hdlexample language="VHDL" />
 </preferences>

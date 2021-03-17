@@ -1,0 +1,7 @@
+
+State Machine - |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss|horizontal_state
+Name horizontal_state.display_area_h horizontal_state.f_porch_h horizontal_state.b_porch_h horizontal_state.sync_h 
+horizontal_state.sync_h 0 0 0 0 
+horizontal_state.b_porch_h 0 0 1 1 
+horizontal_state.f_porch_h 0 1 0 1 
+horizontal_state.display_area_h 1 0 0 1 

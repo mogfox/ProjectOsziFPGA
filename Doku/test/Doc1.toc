@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {2}Entwicklung}{1}{section.2}%
 \contentsline {subsection}{\numberline {2.1}erste Schrittte}{1}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Verwendung der VGA Schnittstelle}{1}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Verwendung der ADCs}{1}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Verwendung der internen ADCs}{1}{subsubsection.2.1.2}%
 \contentsline {paragraph}{ADC Hardware}{2}{section*.2}%
-\contentsline {paragraph}{ADC VHDL-Implementierung}{2}{section*.3}%
+\contentsline {paragraph}{ADC VHDL-Implementierung}{3}{section*.3}%
 \contentsline {section}{\numberline {3}Quellen und Hilfsmittel}{3}{section.3}%

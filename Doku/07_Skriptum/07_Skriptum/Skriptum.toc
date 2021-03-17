@@ -1,0 +1,33 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Datumsfunktionen}{5}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Allgemeines}{5}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}\IeC {\"U}bersicht}{8}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Zusammenfassung}{10}{subsection.1.3}% 
+\contentsline {section}{\numberline {2}Uhrzeitfunktionen}{10}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Allgemeines}{10}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}\IeC {\"U}bersicht}{10}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Zusammenfassung}{11}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}\texttt {WENN} Funktion}{12}{section.3}% 
+\contentsline {section}{\numberline {4}\texttt {UND} Funktion}{13}{section.4}% 
+\contentsline {section}{\numberline {5}\texttt {ODER} Funktion}{13}{section.5}% 
+\contentsline {section}{\numberline {6}Matrixfunktionen}{14}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}\texttt {VERGLEICH}}{14}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}\texttt {INDEX} (Matrixversion)}{15}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}\texttt {INDEX} (Bezugsversion)}{16}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.4}Beispiel zu \texttt {INDEX} und \texttt {VERGLEICH}}{18}{subsection.6.4}% 
+\contentsline {subsection}{\numberline {6.5}\texttt {SVERWEIS}}{20}{subsection.6.5}% 
+\contentsline {subsection}{\numberline {6.6}\texttt {WVERWEIS}}{21}{subsection.6.6}% 
+\contentsline {section}{\numberline {7}Daten filtern}{22}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Autofilter}{23}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}\texttt {TEILERGEBNIS}}{24}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.3}Spezialfilter}{26}{subsection.7.3}% 
+\contentsline {subsection}{\numberline {7.4}Spezialfilter Kriterienbereich}{27}{subsection.7.4}% 
+\contentsline {subsection}{\numberline {7.5}Spezialfilter Vergleichsoperationen}{28}{subsection.7.5}% 
+\contentsline {subsection}{\numberline {7.6}Spezialfilter aktivieren}{28}{subsection.7.6}% 
+\contentsline {subsection}{\numberline {7.7}Spezialfilter mit berechneten Feldern}{30}{subsection.7.7}% 
+\contentsline {section}{\numberline {8}Datenbankfunktionen}{31}{section.8}% 
+\contentsline {section}{\numberline {9}Erweiterte \texttt {WENN} Funktionen}{32}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}\texttt {SUMMEWENN} Funktion}{32}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}\texttt {SUMMEWENNS} Funktion}{33}{subsection.9.2}% 
+\contentsline {subsection}{\numberline {9.3}\texttt {Z\IeC {\"A}HLENWENN} Funktion}{34}{subsection.9.3}% 
+\contentsline {subsection}{\numberline {9.4}\texttt {Z\IeC {\"A}HLENWENNS} Funktion}{34}{subsection.9.4}% 

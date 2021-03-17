@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC1420CGN#PBF
+D 12Bit 10Msps Analog to Digital Converter Linear Technology LTC1420CGN#PBF, 12 bit Parallel ADC, Differential Input, 28-Pin SSOP
+F http://cds.linear.com/docs/en/datasheet/1420fa.pdf
+$ENDCMP
+#
+#End Doc Library

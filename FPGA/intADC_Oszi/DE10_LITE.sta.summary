@@ -1,0 +1,65 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 14.756
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_CLK_10'
+Slack : 96.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 15.277
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.728
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.712
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
+Slack : 96.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 17.757
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.289
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.805
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
+Slack : 96.000
+TNS   : 0.000
+
+------------------------------------------------------------

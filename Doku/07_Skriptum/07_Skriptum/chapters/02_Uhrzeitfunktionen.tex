@@ -1,0 +1,53 @@
+
+
+\section{Uhrzeitfunktionen}
+
+\subsection{Allgemeines}
+
+Für die Uhrzeit, oder generell Zeitdarstellung, wird einfach der Nachkommateil des Datums herangezogen. 0,5 entspricht hier genau 12 Uhr, 0,75 wäre 18 Uhr. Fügt man nun Datum und Uhrzeit zusammen, so erhält man mit 40128,5 den 11.11.2009 und 12 Uhr Mittags.
+
+Eine Funktion, welche für Zeitberechnungen immer wieder verwendet wird, ist \xlf{Zeit}, mit der man getrennte Stunden, Minuten und Sekunden zu einem Zeitwert zusammenführt.
+
+
+
+\subsection{Übersicht}
+\begin{description}[labelindent=0cm, leftmargin=7cm, font=\mdseries, labelwidth=5cm,style=nextline]
+\item[\stmt{STUNDE(\syntax{Uhrzeit})}] Liefert die Stunde einer Uhrzeit als Ganzzahl\\
+Z.B. \stmt{STUNDE("12:34:23")} $\Rightarrow$ 12
+\item[\stmt{MINUTE(\syntax{Uhrzeit})}] Liefert die Minute einer Uhrzeit als Ganzzahl\\
+Z.B. \stmt{MINUTE("12:34:23)"} $\Rightarrow$ 34
+\item[\stmt{SEKUNDE(\syntax{Uhrzeit})}] Liefert die Sekunde einer Uhrzeit als Ganzzahl\\
+Z.B. \stmt{SEKUNDE("12:34:23")} $\Rightarrow$ 23
+\item[\stmt{ZEIT(\syntax{Stunde}; \syntax{Minute}; \syntax{Sekunde}) }] Erstellt aus drei Ganzzahlen eine Uhrzeit\\
+Z.B. \stmt{ZEIT(12; 34; 23)} $\Rightarrow$ 12:34:23 \\$\Rightarrow$ 0,523877314814815
+\end{description}
+
+
+% http://tex.stackexchange.com/questions/58757/how-do-you-put-a-character-in-the-margin-using-an-environment
+
+
+\begin{infobox}%
+Die \stmt{ZEIT()} Funktion eignet sich wie die \stmt{DATUM()}Funktion, um aus Addition oder Subtraktion von Stunden, Minuten und Sekunden eine neue Uhrzeit zu bekommen. Es ist allerdings zu beachten, dass bei einem Überschreiten der 24 Stunden die Zeitfunktion allfällige Tage abschneidet. So ergibt \stmt{ZEIT(27; 0; 0)} nicht den Wert 1,125 sondern 0,125, was der Uhrzeit von 3 Uhr entspricht.
+\end{infobox}
+
+
+Wenn als Beispiel zu dem Zeitpunkt 15.03.2014 11:00:00 eine Zeit von 30 Stunden, 20 Minuten und 10 Sekunden addiert werden soll bringt die Formel
+$$ =\text{\stmt{"15.3.2014 11:00:00" + ZEIT(30;20;10)}}$$
+das nicht richtige  Ergebnis: 15.3.2014 17:20:10!
+\begin{lightbulbbox}
+Um dieses Problem zu lösen, ist es ratsam, prinzipiell für Zeitoperationen Stunden, Minuten und Sekunden in Bruchteile eines Tages umzurechnen. Also lautet die Formel für die korrekte Berechnung
+$$ =\text{\stmt{"15.03.2014 11:00:00" + 30/24 + 20/24/60+10/24/60/60}}$$
+welche das korrekte Ergebnis 16.03.2014 17:20:10 liefert.
+\end{lightbulbbox}
+
+
+
+\subsection{Zusammenfassung}
+
+	
+\begin{itemize}
+	\item  Uhrzeiten werden als Bruchteil von 1 angesehen. So entspricht die Zahl 0,5 der Uhrzeit 12:00 oder 0,375 entspricht 09:00. Der Termin 05.03.2014 11:15 entspricht daher dem Zahlenwert 41703,46875.
+
+	\item Da In Excel Datums- und Uhrzeitangaben als Zahlen repäsentiert werden, kann man daher auch mittels mathemathischer Operatoren, wie Addition und Subtraktion, mit Datumswerten rechnen.	
+	
+\end{itemize}

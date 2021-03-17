@@ -1,0 +1,44 @@
+\babel@toc {ngerman}{}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Datumsdarstelung in Excel\relax }}{5}{figure.caption.4}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Rechnen mit Datumsangaben\relax }}{5}{figure.caption.5}% 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Formatfehler der Datumsberechnung\relax }}{6}{figure.caption.6}% 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Tagesdifferenz als Zahl formatiert\relax }}{6}{figure.caption.7}% 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Altersdifferenzen, Ausgangslage\relax }}{6}{figure.caption.8}% 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Altersdifferenz auf der Zeitachse\relax }}{7}{figure.caption.9}% 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Berechnete Altersdifferenzen\relax }}{7}{figure.caption.10}% 
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Differenzalter auf der Zeitachse\relax }}{7}{figure.caption.11}% 
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Tats\IeC {\"a}chliche Altersdifferenz\relax }}{8}{figure.caption.12}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \texttt {WENN} Funktion\relax }}{12}{figure.caption.13}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Verschachtelte \texttt {WENN} Funktion\relax }}{12}{figure.caption.14}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \texttt {WENN} und \texttt {UND} in einer Formel\relax }}{13}{figure.caption.15}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \texttt {ODER} in einer Formel\relax }}{13}{figure.caption.16}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \texttt {VERGLEICH} in einem Beispiel\relax }}{15}{figure.caption.17}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \texttt {VERGLEICH} mit fehlerhaftem Wert\relax }}{15}{figure.caption.18}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \texttt {MATRIX} Funktion\relax }}{16}{figure.caption.19}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \texttt {MATRIX} Funktion mit \texttt {VERGLEICH}\relax }}{16}{figure.caption.20}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \texttt {INDEX} Funktion mit mehreren Bereichen\relax }}{17}{figure.caption.21}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Verkaufsliste des Obsth\IeC {\"a}ndlers\relax }}{18}{figure.caption.22}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Schnittpunkt mit dem gesuchten Wert\relax }}{18}{figure.caption.23}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces {Melonen} \relax }}{19}{figure.caption.24}% 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces {M\IeC {\"a}rz} \relax }}{19}{figure.caption.25}% 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \texttt {SVERWEIS} zur Rabattfindung\relax }}{21}{figure.caption.26}% 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \texttt {WVERWEIS} zur Rabattfindung\relax }}{22}{figure.caption.27}% 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Autofilter aus dem Men\IeC {\"u} ausw\IeC {\"a}hlen\relax }}{23}{figure.caption.28}% 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Eingeschaltetes Autofilter\relax }}{23}{figure.caption.29}% 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Inhaltsabh\IeC {\"a}ngige Filterm\IeC {\"o}glichkeiten\relax }}{24}{figure.caption.30}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Autofilter bei Datumsspalten}}}{24}{subfigure.3.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Autofilter bei Zahlenspalten}}}{24}{subfigure.3.2}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Autofilter bei Textspalten}}}{24}{subfigure.3.3}% 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces \texttt {TEILERGEBNIS} und ausgeblendete Zeilen\relax }}{25}{figure.caption.31}% 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Gehaltssumme der Abteilung BH mit \texttt {TEILERGEBNIS} \relax }}{25}{figure.caption.32}% 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Spezialfilter mit Datenbereich und Kriterienbereich \relax }}{26}{figure.caption.33}% 
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Spezialfilter Kriterienbereich \relax }}{27}{figure.caption.34}% 
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Spezialfilter Men\IeC {\"u}\relax }}{29}{figure.caption.35}% 
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Spezialfilter aktivieren\relax }}{29}{figure.caption.36}% 
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Spezialfilter Fehlermeldung\relax }}{30}{figure.caption.37}% 
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Spezialfilter mit berechnetem Feld\relax }}{31}{figure.caption.38}% 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Datenbankfunktionen\relax }}{32}{figure.caption.39}% 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces \texttt {SUMMEWENN} Funktion\relax }}{33}{figure.caption.40}% 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces \texttt {SUMMEWENNS} Funktion\relax }}{33}{figure.caption.41}% 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces \texttt {Z\IeC {\"A}HLENWENN} Funktion\relax }}{34}{figure.caption.42}% 
+\contentsline {figure}{\numberline {9.4}{\ignorespaces \texttt {ZAEHLENWENNS} Funktion\relax }}{35}{figure.caption.43}% 

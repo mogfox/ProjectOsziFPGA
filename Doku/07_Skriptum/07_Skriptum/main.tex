@@ -1,0 +1,116 @@
+% =======================================
+%
+% Verwendete zusätzliche Pakete
+%
+% =======================================
+
+
+% Vorlesungsbezeichnungen setzen
+\setvalue{vorlesungsnummer}{WS2020}
+\setvalue{vorlesungsbezeichnung}{BBAF-VZ/BB}
+\setvalue{author}{Wolfgang Murth, Martin Nigitsch}
+ 
+ 
+% Setzen der Dokumenteninformationen für die PDF Datei
+\setvalue{pdfauthor}{\getvalue{author}}
+\iftoggle{german}
+{
+	\setvalue{pdftitle}{Excel Funktionen, Grundlagen Wirtschaftsinformatik (WS2020)}
+}
+{
+	\setvalue{pdftitle}{Excel Funktionen, Grundlagen Wirtschaftsinformatik (WS2020)}
+}
+\setvalue{pdfsubject}{ }
+\setvalue{pdfkeywords} {}
+\setvalue{pdfcreationdate}{20200901120000}
+\setvalue{pdfmoddate}{20200901120000}
+% Übernehmen der Variablen für das PDF
+\setpdfinfo
+
+\renewmenumacro{\menu}{roundedmenus}
+
+% =======================================
+%
+% Dokumentenbeginn
+%
+% =======================================
+
+\begin{document}
+ 
+% Fußzeile links (DEFAULT: Vorlesungsbezeichnung)
+%\footerleft{\vorlesungsbezeichnung} 
+ 
+% Fußzeile rechts (DEFAULT: Autor)
+%\footerright{\getvalue{author}} 
+
+
+% =======================================
+%
+% Deckblatt
+%
+% =======================================
+\begin{titlepage}
+\begin{textblock}{100}(0	,220)
+\getvalue{author}\\
+
+\vorlesungsbezeichnung  (\vorlesungsnummer)
+
+\end{textblock}
+\begin{textblock}{120}(22.5	,0)
+	%\includegraphics[width=8cm]{images/excel_toplogo2010}
+\end{textblock}
+
+	\vspace*{5.8cm}
+	\begin{center}
+		\Huge
+
+\iftoggle{german}
+{
+	\textbf{Excel Funktionen\\\Large{\vspace{0.3cm}Grundlagen Wirtschaftsinformatik\\WS2020}}\\
+}
+{
+	\textbf{Excel Funktionen\\Grundlagen Wirtschaftsinformatik\\WS2020}\\
+}
+
+		
+		
+		\normalsize
+	\end{center}	
+\end{titlepage}
+
+% =======================================
+%
+% Inhaltsverzeichnisse
+%
+% =======================================
+\tableofcontents
+%\clearpage
+\listoffigures
+\listoftables
+%\lstlistoflistings
+\clearpage
+
+
+
+%=============================================================================
+%=============================================================================
+%=============================================================================
+
+
+\input{chapters/01_Datumsfunktionen}
+\input{chapters/02_Uhrzeitfunktionen}
+\input{chapters/03_WennFunktion}
+\input{chapters/04_UndFunktion}
+\input{chapters/05_OderFunktion}
+\input{chapters/06_Matrixfunktionen}
+\input{chapters/07_Verweise}
+\input{chapters/08_Filtern}
+\input{chapters/09_SummeZaehlen-Wenn}
+%\input{chapters/10_Bedingte Formatierung}
+
+%\bibliographystyle{unsrtdin}
+%\bibliography{bib/references}
+
+
+
+\end{document}

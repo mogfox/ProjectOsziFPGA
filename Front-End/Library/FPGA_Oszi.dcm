@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT232RL
+D USB/Serial IC UART SSOP-28 FTDI Chip FT232RL-REEL, USB Controller, 3MBd, USB 2.0, 1.8  5.25 V, 28-Pin SSOP
+F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
+$ENDCMP
+#
+$CMP LTC1420CGN#PBF
+D 12Bit 10Msps Analog to Digital Converter Linear Technology LTC1420CGN#PBF, 12 bit Parallel ADC, Differential Input, 28-Pin SSOP
+F http://cds.linear.com/docs/en/datasheet/1420fa.pdf
+$ENDCMP
+#
+#End Doc Library

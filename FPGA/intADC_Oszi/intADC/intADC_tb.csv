@@ -1,0 +1,32 @@
+# system info intADC_tb on 2021.02.25.14:08:49
+system_info:
+name,value
+DEVICE,10M50DAF484C7G
+DEVICE_FAMILY,MAX 10
+GENERATION_ID,1614258519
+#
+#
+# Files generated for intADC_tb on 2021.02.25.14:08:49
+files:
+filepath,kind,attributes,module,is_top
+intADC/testbench/intADC_tb/simulation/intADC_tb.vhd,VHDL,,intADC_tb,true
+intADC/testbench/intADC_tb/simulation/submodules/intADC.vhd,VHDL,,intADC,false
+intADC/testbench/intADC_tb/simulation/submodules/altera_avalon_clock_source.vhd,VHDL,,altera_avalon_clock_source,false
+intADC/testbench/intADC_tb/simulation/submodules/altera_avalon_reset_source.vhd,VHDL,,altera_avalon_reset_source,false
+intADC/testbench/intADC_tb/simulation/submodules/intADC_modular_adc_0.vhd,VHDL,,intADC_modular_adc_0,false
+intADC/testbench/intADC_tb/simulation/submodules/altera_modular_adc_control.v,VERILOG,,intADC_modular_adc_0_control_internal,false
+intADC/testbench/intADC_tb/simulation/submodules/altera_modular_adc_control_avrg_fifo.v,VERILOG,,intADC_modular_adc_0_control_internal,false
+intADC/testbench/intADC_tb/simulation/submodules/altera_modular_adc_control_fsm.v,VERILOG,,intADC_modular_adc_0_control_internal,false
+intADC/testbench/intADC_tb/simulation/submodules/chsel_code_converter_sw_to_hw.v,VERILOG,,intADC_modular_adc_0_control_internal,false
+intADC/testbench/intADC_tb/simulation/submodules/fiftyfivenm_adcblock_primitive_wrapper.v,VERILOG,,intADC_modular_adc_0_control_internal,false
+intADC/testbench/intADC_tb/simulation/submodules/fiftyfivenm_adcblock_top_wrapper.v,VERILOG,,intADC_modular_adc_0_control_internal,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+intADC_tb.intADC_inst,intADC
+intADC_tb.intADC_inst.modular_adc_0,intADC_modular_adc_0
+intADC_tb.intADC_inst.modular_adc_0.control_internal,intADC_modular_adc_0_control_internal
+intADC_tb.intADC_inst_adc_pll_clock_bfm,altera_avalon_clock_source
+intADC_tb.intADC_inst_clock_bfm,altera_avalon_clock_source
+intADC_tb.intADC_inst_reset_sink_bfm,altera_avalon_reset_source

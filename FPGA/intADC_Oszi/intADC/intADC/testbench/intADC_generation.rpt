@@ -1,0 +1,206 @@
+Info: Starting: Create testbench Platform Designer system
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/intADC.ipx
+Info: qsys-generate D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC.qsys --testbench=SIMPLE --output-directory=D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading intADC/intADC.qsys
+Progress: Reading input file
+Progress: Adding modular_adc_0 [altera_modular_adc 20.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga_lite\20.1\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga_lite\20.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga_lite\20.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga_lite\20.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0,02 seconds
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC\testbench\intADC.ipx
+Progress: Loading intADC/intADC.qsys
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/* matched 4 files in 0,00 seconds
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/ip/**/* matched 0 files in 0,00 seconds
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/*/* matched 20 files in 0,00 seconds
+Info: D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC\testbench\intADC.ipx described 0 plugins, 3 paths, in 0,01 seconds
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/* matched 4 files in 0,03 seconds
+Info: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/*/* matched 0 files in 0,00 seconds
+Info: C:/Users/lukas/.altera.quartus/ip/20.1/**/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\20.1\ip\altera\altera_components.ipx
+Info: C:\intelfpga_lite\20.1\ip\altera\altera_components.ipx described 1971 plugins, 0 paths, in 0,27 seconds
+Info: C:/intelfpga_lite/20.1/ip/**/* matched 109 files in 0,28 seconds
+Info: C:/intelfpga_lite/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\20.1\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga_lite\20.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/**/* matched 8 files in 0,01 seconds
+Info: C:/intelfpga_lite/20.1/quartus/common/librarian/factories/**/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0,00 seconds
+Info: C:\intelfpga_lite\20.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0,34 seconds
+Info: C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0,35 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: intADC
+Info: TB_Gen: System design is: intADC
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property adc_pll_clock EXPORT_OF
+Info: get_instance_property modular_adc_0 CLASS_NAME
+Info: get_instance_assignment modular_adc_0 testbench.partner.map.adc_pll_clock
+Info: get_interface_property adc_pll_locked EXPORT_OF
+Info: get_instance_property modular_adc_0 CLASS_NAME
+Info: get_instance_assignment modular_adc_0 testbench.partner.map.adc_pll_locked
+Info: get_interface_property clock EXPORT_OF
+Info: get_instance_property modular_adc_0 CLASS_NAME
+Info: get_instance_assignment modular_adc_0 testbench.partner.map.clock
+Info: get_interface_property command EXPORT_OF
+Info: get_instance_property modular_adc_0 CLASS_NAME
+Info: get_instance_assignment modular_adc_0 testbench.partner.map.command
+Info: get_interface_property reset_sink EXPORT_OF
+Info: get_instance_property modular_adc_0 CLASS_NAME
+Info: get_instance_assignment modular_adc_0 testbench.partner.map.reset_sink
+Info: get_interface_property response EXPORT_OF
+Info: get_instance_property modular_adc_0 CLASS_NAME
+Info: get_instance_assignment modular_adc_0 testbench.partner.map.response
+Info: send_message Info TB_Gen: Creating testbench system : intADC_tb with clock and reset BFMs
+Info: TB_Gen: Creating testbench system : intADC_tb with clock and reset BFMs
+Info: create_system intADC_tb
+Info: add_instance intADC_inst intADC 
+Info: set_use_testbench_naming_pattern true intADC
+Info: get_instance_interfaces intADC_inst
+Info: get_instance_interface_property intADC_inst adc_pll_clock CLASS_NAME
+Info: get_instance_interface_property intADC_inst adc_pll_locked CLASS_NAME
+Info: get_instance_interface_property intADC_inst clock CLASS_NAME
+Info: get_instance_interface_property intADC_inst command CLASS_NAME
+Info: get_instance_interface_property intADC_inst reset_sink CLASS_NAME
+Info: get_instance_interface_property intADC_inst response CLASS_NAME
+Info: get_instance_interface_property intADC_inst adc_pll_clock CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: adc_pll_clock
+Info: TB_Gen: clock_sink found: adc_pll_clock
+Info: get_instance_interface_property intADC_inst adc_pll_clock CLASS_NAME
+Info: add_instance intADC_inst_adc_pll_clock_bfm altera_avalon_clock_source 
+Info: get_instance_property intADC_inst_adc_pll_clock_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value intADC_inst adc_pll_clock clockRate
+Info: send_message Warning TB_Gen: clockRate is less than 1Hz; setting to 50MHz
+Warning: TB_Gen: clockRate is less than 1Hz; setting to 50MHz
+Info: set_instance_parameter_value intADC_inst_adc_pll_clock_bfm CLOCK_RATE 50000000
+Info: set_instance_parameter_value intADC_inst_adc_pll_clock_bfm CLOCK_UNIT 1
+Info: get_instance_property intADC_inst_adc_pll_clock_bfm CLASS_NAME
+Info: get_instance_interface_property intADC_inst adc_pll_clock CLASS_NAME
+Info: get_instance_interfaces intADC_inst_adc_pll_clock_bfm
+Info: get_instance_interface_property intADC_inst_adc_pll_clock_bfm clk CLASS_NAME
+Info: add_connection intADC_inst_adc_pll_clock_bfm.clk intADC_inst.adc_pll_clock
+Info: get_instance_interface_property intADC_inst clock CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clock
+Info: TB_Gen: clock_sink found: clock
+Info: get_instance_interface_property intADC_inst clock CLASS_NAME
+Info: add_instance intADC_inst_clock_bfm altera_avalon_clock_source 
+Info: get_instance_property intADC_inst_clock_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value intADC_inst clock clockRate
+Info: send_message Warning TB_Gen: clockRate is less than 1Hz; setting to 50MHz
+Warning: TB_Gen: clockRate is less than 1Hz; setting to 50MHz
+Info: set_instance_parameter_value intADC_inst_clock_bfm CLOCK_RATE 50000000
+Info: set_instance_parameter_value intADC_inst_clock_bfm CLOCK_UNIT 1
+Info: get_instance_property intADC_inst_clock_bfm CLASS_NAME
+Info: get_instance_interface_property intADC_inst clock CLASS_NAME
+Info: get_instance_interfaces intADC_inst_clock_bfm
+Info: get_instance_interface_property intADC_inst_clock_bfm clk CLASS_NAME
+Info: add_connection intADC_inst_clock_bfm.clk intADC_inst.clock
+Info: get_instance_interface_property intADC_inst reset_sink CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: reset_sink
+Info: TB_Gen: reset_sink found: reset_sink
+Info: get_instance_interface_property intADC_inst reset_sink CLASS_NAME
+Info: add_instance intADC_inst_reset_sink_bfm altera_avalon_reset_source 
+Info: get_instance_property intADC_inst_reset_sink_bfm CLASS_NAME
+Info: get_instance_interface_ports intADC_inst reset_sink
+Info: get_instance_interface_port_property intADC_inst reset_sink reset_sink_reset_n ROLE
+Info: get_instance_interface_port_property intADC_inst reset_sink reset_sink_reset_n ROLE
+Info: set_instance_parameter_value intADC_inst_reset_sink_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value intADC_inst_reset_sink_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property intADC_inst_reset_sink_bfm CLASS_NAME
+Info: get_instance_interfaces intADC_inst_reset_sink_bfm
+Info: get_instance_interface_property intADC_inst_reset_sink_bfm clk CLASS_NAME
+Info: get_instance_interface_property intADC_inst_reset_sink_bfm reset CLASS_NAME
+Info: get_instance_property intADC_inst_reset_sink_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value intADC_inst reset_sink associatedClock
+Info: get_instance_interface_property intADC_inst clock CLASS_NAME
+Info: get_instance_interfaces intADC_inst_clock_bfm
+Info: get_instance_interface_property intADC_inst_clock_bfm clk CLASS_NAME
+Info: add_connection intADC_inst_clock_bfm.clk intADC_inst_reset_sink_bfm.clk
+Info: get_instance_interface_property intADC_inst reset_sink CLASS_NAME
+Info: get_instance_interfaces intADC_inst_reset_sink_bfm
+Info: get_instance_interface_property intADC_inst_reset_sink_bfm clk CLASS_NAME
+Info: get_instance_interface_property intADC_inst_reset_sink_bfm reset CLASS_NAME
+Info: add_connection intADC_inst_reset_sink_bfm.reset intADC_inst.reset_sink
+Info: send_message Info TB_Gen: Saving testbench system: intADC_tb.qsys
+Info: TB_Gen: Saving testbench system: intADC_tb.qsys
+Info: save_system intADC_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/intADC_tb.qsys
+Info: Done
+Info: qsys-generate D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC.qsys --simulation=VHDL --allow-mixed-language-simulation --testbench=SIMPLE --testbench-simulation=VHDL --allow-mixed-language-testbench-simulation --output-directory=D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC\testbench\intADC_tb\simulation --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading testbench/intADC_tb.qsys
+Progress: Reading input file
+Progress: Adding intADC_inst [intADC 1.0]
+Progress: Parameterizing module intADC_inst
+Progress: Adding intADC_inst_adc_pll_clock_bfm [altera_avalon_clock_source 20.1]
+Progress: Parameterizing module intADC_inst_adc_pll_clock_bfm
+Progress: Adding intADC_inst_clock_bfm [altera_avalon_clock_source 20.1]
+Progress: Parameterizing module intADC_inst_clock_bfm
+Progress: Adding intADC_inst_reset_sink_bfm [altera_avalon_reset_source 20.1]
+Progress: Parameterizing module intADC_inst_reset_sink_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: intADC_tb.intADC_inst_adc_pll_clock_bfm: Elaborate: altera_clock_source
+Info: intADC_tb.intADC_inst_adc_pll_clock_bfm:            $Revision: #1 $
+Info: intADC_tb.intADC_inst_adc_pll_clock_bfm:            $Date: 2019/10/06 $
+Info: intADC_tb.intADC_inst_clock_bfm: Elaborate: altera_clock_source
+Info: intADC_tb.intADC_inst_clock_bfm:            $Revision: #1 $
+Info: intADC_tb.intADC_inst_clock_bfm:            $Date: 2019/10/06 $
+Info: intADC_tb.intADC_inst_reset_sink_bfm: Elaborate: altera_reset_source
+Info: intADC_tb.intADC_inst_reset_sink_bfm:            $Revision: #1 $
+Info: intADC_tb.intADC_inst_reset_sink_bfm:            $Date: 2019/10/06 $
+Info: intADC_tb.intADC_inst_reset_sink_bfm: Reset is negatively asserted.
+Warning: intADC_tb.intADC_inst.command: intADC_inst.command must be connected to an Avalon-ST source
+Warning: intADC_tb.intADC_inst.response: intADC_inst.response must be connected to an Avalon-ST sink
+Warning: intADC_tb.intADC_inst: intADC_inst.adc_pll_locked must be exported, or connected to a matching conduit.
+Info: intADC_tb: Generating intADC_tb "intADC_tb" for SIM_VHDL
+Info: intADC_inst: "intADC_tb" instantiated intADC "intADC_inst"
+Info: intADC_inst_adc_pll_clock_bfm: "intADC_tb" instantiated altera_avalon_clock_source "intADC_inst_adc_pll_clock_bfm"
+Info: intADC_inst_reset_sink_bfm: "intADC_tb" instantiated altera_avalon_reset_source "intADC_inst_reset_sink_bfm"
+Info: modular_adc_0: "intADC_inst" instantiated altera_modular_adc "modular_adc_0"
+Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: intADC_tb: Done "intADC_tb" with 6 modules, 11 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC_tb.spd --output-directory=D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\Semesterprojekt\ProjectOsziFPGA\FPGA\intADC_Oszi\intADC\intADC_tb.spd --output-directory=D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	5 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/Semesterprojekt/ProjectOsziFPGA/FPGA/intADC_Oszi/intADC/intADC/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Platform Designer system

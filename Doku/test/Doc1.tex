@@ -15,7 +15,7 @@ This is the introduction.
 \section{Entwicklung}
 \subsection{erste Schrittte}
 \subsubsection{Verwendung der VGA Schnittstelle}
-\subsubsection{Verwendung der ADCs}
+\subsubsection{Verwendung der internen ADCs}
 Das DE10-Lite Board hat 6 integrierte ADCs. Diese sind mit einer Bandbreite von 12 Bit und einer Sampling-Frequenz von 10 MHz spezifiziert und haben eine Verstärkerschaltung vorgeschalten. Eine analoge Eingangsspannung von 0-5V ist zulässig. Quartus-Prime bietet bereits fertige IP-Cores zur erleichterten Implementierung an.
  
 \paragraph{ADC Hardware}
@@ -27,7 +27,7 @@ Die auf dem Chip \textit{MAX 10 10M50DAF484C7G} realisierten 6 ADCs werden verwe
 \label{ADC_Blockschaltbild}
 \end{center}
 \end{figure}
-Das "analog Front-End" besteht aus einem OPV, der grundsätzlich die Aufgabe hat die Spannung zu halbieren. Somit werden die maximal zulässigen 5V auf 2,5V heruntergeregelt, welche die Referenzspannung des ADCs ist und diesen so auch aussteuert. Die Transitfrequenz des MCP6244 liegt bei 550kHz. Bei 10MHz geht sich eine Verstärkung von 0,5 knapp aus, was jedoch wenig Bedeutung hat, da die Frequenz Eingangssignale, aufgrund der Abtastrate, ohnehin kleiner sein muss. \\Wie in dem Schaltplanausschnitt (FPGA-Schaltplan: \ref{Schaltplan_FPGA}) in Abbildung \ref{Front-End_Schaltung} zu sehen, sind auch Kondensatoren vorhanden. Das Verhalten im Frequenzbereich wurde mithilfe von LtSpice analysiert. Da der orginale OPV im Simulationsprogramm nicht spezifiziert ist, wurde der sehr ähnliche AD8624 verwendet.
+Das "analog Front-End"enthhält einen Vorverstärker, realisiert mittels OPV, der grundsätzlich die Aufgabe hat die Spannung zu halbieren. Somit werden die maximal zulässigen 5V auf 2,5V heruntergeregelt, welche die Referenzspannung des ADCs ist und diesen so nicht übersteuert. Die Transitfrequenz des MCP6244 liegt bei 550kHz. Bei 10MHz geht sich eine Verstärkung von 0,5 knapp aus, was jedoch wenig Bedeutung hat, da die Frequenz der Eingangssignale, aufgrund der Abtastrate von 10MSa/s, ohnehin kleiner sein muss. \\Wie in dem Schaltplanausschnitt (aus FPGA-Schaltplan: \ref{Schaltplan_FPGA}) in Abbildung \ref{Front-End_Schaltung} zu sehen, sind auch Kondensatoren vorhanden. Das Verhalten im Frequenzbereich wurde mithilfe von LtSpice analysiert. Da der orginale OPV im Simulationsprogramm nicht spezifiziert ist, wurde der sehr ähnliche AD8038 verwendet.
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=15cm]{Grafiken/ADC_Front-End.PNG}
@@ -35,7 +35,14 @@ Das "analog Front-End" besteht aus einem OPV, der grundsätzlich die Aufgabe hat
 \label{Front-End_Schaltung}
 \end{center}
 \end{figure}
-\newline
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=15cm]{Grafiken/ADC_Front-End_Bode.PNG}
+\caption{Bodediagramm Vorverstärker}
+\label{Front-End_Bode}
+\end{center}
+\end{figure}
+\\Im Bodediagramm (Figure: \ref{Front-End_Bode}) ist die Verstärkung von $\frac{1}{2} = -6dB$ gut zu erkennen. Der Abfall von - dB pro Dekade beweißt die xx Ordnung. Die Grenzfrequenz ($hier bei -9dB$) liegt bei 997kHz. Das ist locker ausreichend, da die Frequenz der Eingangssignale aufgrund der Abtastrate von 10MSa/s sowieso niedriger ist.
 
 \paragraph{ADC VHDL-Implementierung}
 a

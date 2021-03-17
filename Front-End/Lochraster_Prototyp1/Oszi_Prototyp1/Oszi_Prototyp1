@@ -1,0 +1,10 @@
+Reference, Value, Footprint, Datasheet, Arrow Part Number, Arrow Price/Stock, Description, Height, Manufacturer_Name, Manufacturer_Part_Number, Mouser Part Number, Mouser Price/Stock
+"J1","FPGA_GPIO","Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical","~"
+"IC1","LTC1420CGN#PBF","SamacSys_Parts:SOP64P601X175-28N","http://cds.linear.com/docs/en/datasheet/1420fa.pdf","LTC1420CGN#PBF","https://www.arrow.com/en/products/ltc1420cgnpbf/linear-technology","12Bit 10Msps Analog to Digital Converter Linear Technology LTC1420CGN#PBF, 12 bit Parallel ADC, Differential Input, 28-Pin SSOP","1.748","Linear Technology","LTC1420CGN#PBF","584-LTC1420CGN#PBF","https://www.mouser.com/Search/Refine.aspx?Keyword=584-LTC1420CGN%23PBF"
+"C2","1uF","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","~"
+"C3","1uF","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","~"
+"C1","1uF","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","~"
+"C4","1uF","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","~"
+"C5","1uF","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","~"
+"J2","input","Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal","~"
+"R1","100k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"

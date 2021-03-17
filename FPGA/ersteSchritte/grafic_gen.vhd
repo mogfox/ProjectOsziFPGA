@@ -33,6 +33,19 @@ end grafic_gen;
 architecture rtl of grafic_gen is
 
 signal ADC_value : natural;
+
+component RAM is
+	PORT
+		(
+			clock		: IN STD_LOGIC  := '1';
+			data		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+			rdaddress		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+			wraddress		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+			wren		: IN STD_LOGIC  := '0';
+			q		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0)
+		);
+end component RAM;
+
 begin
 
 ADC_value <= to_integer(signed(ADC_in(11 downto 3)));
