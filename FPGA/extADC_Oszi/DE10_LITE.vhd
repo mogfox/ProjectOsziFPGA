@@ -60,6 +60,9 @@ component DataUnit is
 	port(
 		RESET_n			:  in std_logic;	--master reset
 		CLK				:  in std_logic;	--clk in 10 MHz	
+		
+		GPIO    		: inout std_logic_vector(0 to 35);  --durchschleifen
+		
 		ADC_CH1_value_i	: out natural;
 		ADC_CH1_value_unsig	: out unsigned(11 downto 0)
 	);
@@ -109,6 +112,7 @@ dataFrontEnd: component DataUnit
 	port map(
 		RESET_n				=> reset_n,
 		CLK					=> CLK,
+		GPIO 				=> GPIO,
 		ADC_CH1_value_unsig => ADC_CH1_value_unsig,
 		ADC_CH1_value_i 	=> ADC_CH1_value_i
 	);

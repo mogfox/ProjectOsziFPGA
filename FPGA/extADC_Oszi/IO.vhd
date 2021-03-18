@@ -21,8 +21,8 @@ entity IO is
 		--verbinden zu TOP-Level
 		KEY           :  in std_logic_vector(    keys_c - 1 downto 0);
 		SW            :  in std_logic_vector(switches_c - 1 downto 0);
-        LEDR          : out std_logic_vector(    leds_c - 1 downto 0);
-		GPIO    	: inout std_logic_vector(0 to 35);
+        LEDR        	: out std_logic_vector(    leds_c - 1 downto 0);
+		GPIO    		: inout std_logic_vector(0 to 35);
 		
 		HEX0          : out std_logic_vector(7 downto 0) := (others => '1');
         HEX1          : out std_logic_vector(7 downto 0) := (others => '1');
@@ -50,7 +50,8 @@ HEX1(6 downto 0) <= not (disp_array_c(TO_INTEGER(ADC_CH1_value_unsig(7 downto 4)
 HEX2(6 downto 0) <= not (disp_array_c(TO_INTEGER(ADC_CH1_value_unsig(11 downto 8))));
 
 push_reset_n_sig <= KEY(0) or KEY(1);
-LEDR(0) <= push_reset_n_sig;
 push_reset_n <= push_reset_n_sig;
+--LEDR(0) <= push_reset_n_sig;
+LEDR <= std_logic_vector(ADC_CH1_value_unsig(11 downto 2));
 
 end rtl;

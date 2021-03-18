@@ -20,7 +20,7 @@ entity DE10_Lite is
         KEY           :  in std_logic_vector(    keys_c - 1 downto 0);
         SW            :  in std_logic_vector(switches_c - 1 downto 0);
         LEDR          : out std_logic_vector(    leds_c - 1 downto 0);
-		GPIO    	: inout std_logic_vector(0 to 35);
+		GPIO    	  : out std_logic_vector(0 to 35);
         ---------------------------------------------------------------
         VGA_R         : out std_logic_vector(3 downto 0);
         VGA_G         : out std_logic_vector(3 downto 0);
@@ -59,11 +59,12 @@ signal ADC_CH1_value_unsig	: unsigned(11 downto 0);
 component DataUnit is
 	port(
 		RESET_n			:  in std_logic;	--master reset
-		CLK				:  in std_logic;	--clk in 10 MHz	
+		CLK				:  in std_logic;	--clk in 10 MHz
+		
+		GPIO    		: inout std_logic_vector(0 to 35);  --durchschleifen
+		
 		ADC_CH1_value_i	: out natural;
-		ADC_CH1_value_unsig	: out unsigned(11 downto 0);
-		CONNECTED_TO_command_ready : out std_logic;
-		CONNECTED_TO_response_valid : out std_logic
+		ADC_CH1_value_unsig	: out unsigned(11 downto 0)
 	);
 end component DataUnit;
 
@@ -90,7 +91,6 @@ component IO is
 		KEY           	:  in std_logic_vector(    keys_c - 1 downto 0);
 		SW            	:  in std_logic_vector(switches_c - 1 downto 0);
         LEDR          	: out std_logic_vector(    leds_c - 1 downto 0);
-		GPIO    		: inout std_logic_vector(0 to 35);
 		
 		HEX0          	: out std_logic_vector(7 downto 0);
         HEX1          	: out std_logic_vector(7 downto 0);
@@ -111,11 +111,11 @@ dataFrontEnd: component DataUnit
 	port map(
 		RESET_n				=> reset_n,
 		CLK					=> CLK,
-		ADC_CH1_value_unsig => ADC_CH1_value_unsig,
-		ADC_CH1_value_i 	=> ADC_CH1_value_i,
 		
-		CONNECTED_TO_command_ready => open,
-		CONNECTED_TO_response_valid => open
+		GPIO 				=> open,
+		
+		ADC_CH1_value_unsig => ADC_CH1_value_unsig,
+		ADC_CH1_value_i 	=> ADC_CH1_value_i
 	);
 	
 	
@@ -142,7 +142,6 @@ INandOUT: component IO
 		KEY   	=> KEY,
 		SW      => SW,
 		LEDR    => LEDR,
-		GPIO    => GPIO,
 		HEX0    => HEX0,
 		HEX1    => HEX1,
 		HEX2   	=> HEX2,
@@ -156,7 +155,7 @@ INandOUT: component IO
 	);
 --------------------------------------------------------------- after components
 
-  
+GPIO[16] <= CLK;  
 reset_n <= push_reset_n;
 
 end rtl;

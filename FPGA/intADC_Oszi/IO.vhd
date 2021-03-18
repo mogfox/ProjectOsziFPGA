@@ -22,7 +22,6 @@ entity IO is
 		KEY           :  in std_logic_vector(    keys_c - 1 downto 0);
 		SW            :  in std_logic_vector(switches_c - 1 downto 0);
         LEDR          : out std_logic_vector(    leds_c - 1 downto 0);
-		GPIO    	: inout std_logic_vector(0 to 35);
 		
 		HEX0          : out std_logic_vector(7 downto 0) := (others => '1');
         HEX1          : out std_logic_vector(7 downto 0) := (others => '1');

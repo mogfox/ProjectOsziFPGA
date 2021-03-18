@@ -3,7 +3,7 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 15.858
+Slack : 15.383
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
@@ -11,7 +11,7 @@ Slack : 0.418
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.681
+Slack : 9.669
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
@@ -19,35 +19,35 @@ Slack : 19.724
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 16.353
+Slack : 15.881
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.338
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.728
+Slack : 9.718
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.713
+Slack : 19.712
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 18.356
+Slack : 18.064
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.208
+Slack : 0.209
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.289
+Slack : 9.295
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.801
+Slack : 19.803
 TNS   : 0.000
 
 ------------------------------------------------------------

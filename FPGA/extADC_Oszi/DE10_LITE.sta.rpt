@@ -1,5 +1,5 @@
 Timing Analyzer report for DE10_LITE
-Thu Mar 18 08:39:21 2021
+Thu Mar 18 17:23:55 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -93,12 +93,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.9%      ;
+;     Processor 2            ;   2.7%      ;
 +----------------------------+-------------+
 
 
@@ -107,27 +107,28 @@ https://fpgasoftware.intel.com/eula.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; DE10_LITE.SDC ; OK     ; Thu Mar 18 08:39:17 2021 ;
+; DE10_LITE.SDC ; OK     ; Thu Mar 18 17:23:52 2021 ;
 +---------------+--------+--------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                                                                                                                                                                                                   ;
-+----------------------------------------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-; Clock Name                                                                 ; Type      ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master        ; Source                                                                       ; Targets                                                                        ;
-+----------------------------------------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 40.000 ; 25.0 MHz  ; 0.000 ; 20.000 ; 50.00      ; 2         ; 1           ;       ;        ;           ;            ; false    ; MAX10_CLK1_50 ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|inclk[0] ; { grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] } ;
-; MAX10_CLK1_50                                                              ; Base      ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;               ;                                                                              ; { MAX10_CLK1_50 }                                                              ;
-+----------------------------------------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------+-----------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+; Clock Name                                                                       ; Type      ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master        ; Source                                                                             ; Targets                                                                              ;
++----------------------------------------------------------------------------------+-----------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+; dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ; 50.00      ; 5         ; 1           ;       ;        ;           ;            ; false    ; MAX10_CLK1_50 ; dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|inclk[0] ; { dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|clk[0] } ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]       ; Generated ; 40.000  ; 25.0 MHz  ; 0.000 ; 20.000 ; 50.00      ; 2         ; 1           ;       ;        ;           ;            ; false    ; MAX10_CLK1_50 ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|inclk[0]       ; { grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] }       ;
+; MAX10_CLK1_50                                                                    ; Base      ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;               ;                                                                                    ; { MAX10_CLK1_50 }                                                                    ;
++----------------------------------------------------------------------------------+-----------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                              ;
-+-----------+-----------------+----------------------------------------------------------------------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name                                                                 ; Note ;
-+-----------+-----------------+----------------------------------------------------------------------------+------+
-; 142.9 MHz ; 142.9 MHz       ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
-+-----------+-----------------+----------------------------------------------------------------------------+------+
++------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                               ;
++------------+-----------------+----------------------------------------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                                 ; Note ;
++------------+-----------------+----------------------------------------------------------------------------+------+
+; 133.26 MHz ; 133.26 MHz      ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
++------------+-----------------+----------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -136,7 +137,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 15.858 ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 15.383 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -166,7 +167,7 @@ No paths to report.
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; MAX10_CLK1_50                                                              ; 9.681  ; 0.000         ;
+; MAX10_CLK1_50                                                              ; 9.669  ; 0.000         ;
 ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.724 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
@@ -177,13 +178,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                                ;
-+------------+-----------------+----------------------------------------------------------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                                                                 ; Note ;
-+------------+-----------------+----------------------------------------------------------------------------+------+
-; 154.37 MHz ; 154.37 MHz      ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
-+------------+-----------------+----------------------------------------------------------------------------+------+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                               ;
++-----------+-----------------+----------------------------------------------------------------------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name                                                                 ; Note ;
++-----------+-----------------+----------------------------------------------------------------------------+------+
+; 144.2 MHz ; 144.2 MHz       ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ;      ;
++-----------+-----------------+----------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -192,7 +193,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 16.353 ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 15.881 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -201,7 +202,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                      ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------+-------+---------------+
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.338 ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.339 ; 0.000         ;
 +----------------------------------------------------------------------------+-------+---------------+
 
 
@@ -222,8 +223,8 @@ No paths to report.
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; MAX10_CLK1_50                                                              ; 9.728  ; 0.000         ;
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.713 ; 0.000         ;
+; MAX10_CLK1_50                                                              ; 9.718  ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.712 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -238,7 +239,7 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 18.356 ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 18.064 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -247,7 +248,7 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                      ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------+-------+---------------+
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.208 ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.209 ; 0.000         ;
 +----------------------------------------------------------------------------+-------+---------------+
 
 
@@ -268,8 +269,8 @@ No paths to report.
 +----------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                      ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------+--------+---------------+
-; MAX10_CLK1_50                                                              ; 9.289  ; 0.000         ;
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.801 ; 0.000         ;
+; MAX10_CLK1_50                                                              ; 9.295  ; 0.000         ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 19.803 ; 0.000         ;
 +----------------------------------------------------------------------------+--------+---------------+
 
 
@@ -284,9 +285,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
 ; Clock                                                                       ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-----------------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                            ; 15.858 ; 0.208 ; N/A      ; N/A     ; 9.289               ;
-;  MAX10_CLK1_50                                                              ; N/A    ; N/A   ; N/A      ; N/A     ; 9.289               ;
-;  grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 15.858 ; 0.208 ; N/A      ; N/A     ; 19.713              ;
+; Worst-case Slack                                                            ; 15.383 ; 0.209 ; N/A      ; N/A     ; 9.295               ;
+;  MAX10_CLK1_50                                                              ; N/A    ; N/A   ; N/A      ; N/A     ; 9.295               ;
+;  grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 15.383 ; 0.209 ; N/A      ; N/A     ; 19.712              ;
 ; Design-wide TNS                                                             ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  MAX10_CLK1_50                                                              ; N/A    ; N/A   ; N/A      ; N/A     ; 0.000               ;
 ;  grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
@@ -866,21 +867,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 144   ; 144  ;
-; Unconstrained Output Ports      ; 7     ; 7    ;
-; Unconstrained Output Port Paths ; 8     ; 8    ;
+; Unconstrained Input Ports       ; 14    ; 14   ;
+; Unconstrained Input Port Paths  ; 236   ; 236  ;
+; Unconstrained Output Ports      ; 38    ; 38   ;
+; Unconstrained Output Port Paths ; 101   ; 101  ;
 +---------------------------------+-------+------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clock Status Summary                                                                                                                                                              ;
-+----------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------+-------------+
-; Target                                                                     ; Clock                                                                      ; Type      ; Status      ;
-+----------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------+-------------+
-; MAX10_CLK1_50                                                              ; MAX10_CLK1_50                                                              ; Base      ; Constrained ;
-; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] ; Generated ; Constrained ;
-+----------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------+-------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                                                                                          ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-----------+-------------+
+; Target                                                                           ; Clock                                                                            ; Type      ; Status      ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-----------+-------------+
+; MAX10_CLK1_50                                                                    ; MAX10_CLK1_50                                                                    ; Base      ; Constrained ;
+; dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|clk[0] ; dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|clk[0] ; Generated ; Constrained ;
+; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]       ; grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]       ; Generated ; Constrained ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+-----------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -888,6 +890,18 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
+; GPIO[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[4]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[6]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[8]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[10]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[12]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[14]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[16]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[18]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[20]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[22]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -898,7 +912,38 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; GPIO[26]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[8]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[9]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_HS      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -913,6 +958,18 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
+; GPIO[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[4]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[6]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[8]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[10]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[12]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[14]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[16]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[18]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[20]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; GPIO[22]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -923,7 +980,38 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; GPIO[26]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[8]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[9]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_HS      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -939,7 +1027,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 18 08:39:16 2021
+    Info: Processing started: Thu Mar 18 17:23:51 2021
 Info: Command: quartus_sta DE10_LITE -c DE10_LITE
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -947,76 +1035,74 @@ Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'DE10_LITE.SDC'
-Warning (332174): Ignored filter at DE10_LITE.sdc(9): ADC_CLK_10 could not be matched with a port File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 9
-Warning (332049): Ignored create_clock at DE10_LITE.sdc(9): Argument <targets> is an empty collection File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 9
-    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 9
-Warning (332174): Ignored filter at DE10_LITE.sdc(11): MAX10_CLK2_50 could not be matched with a port File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 11
-Warning (332049): Ignored create_clock at DE10_LITE.sdc(11): Argument <targets> is an empty collection File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 11
-    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 11
+Warning (332174): Ignored filter at DE10_LITE.sdc(10): MAX10_CLK2_50 could not be matched with a port File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 10
+Warning (332049): Ignored create_clock at DE10_LITE.sdc(10): Argument <targets> is an empty collection File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 10
+    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.sdc Line: 10
 Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 2 -duty_cycle 50.00 -name {grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]} {grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]}
+    Info (332110): create_generated_clock -source {dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 5 -duty_cycle 50.00 -name {dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|clk[0]} {dataFrontEnd|ADCs|ADC_prescaler_inst|altpll_component|auto_generated|pll1|clk[0]}
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332146): Worst-case setup slack is 15.858
+Info (332146): Worst-case setup slack is 15.383
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.858               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    15.383               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332146): Worst-case hold slack is 0.418
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.418               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.681
+Info (332146): Worst-case minimum pulse width slack is 9.669
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.681               0.000 MAX10_CLK1_50 
+    Info (332119):     9.669               0.000 MAX10_CLK1_50 
     Info (332119):    19.724               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 16.353
+Info (332146): Worst-case setup slack is 15.881
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.353               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.338
+    Info (332119):    15.881               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.339
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.338               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.339               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.728
+Info (332146): Worst-case minimum pulse width slack is 9.718
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.728               0.000 MAX10_CLK1_50 
-    Info (332119):    19.713               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     9.718               0.000 MAX10_CLK1_50 
+    Info (332119):    19.712               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 18.356
+Info (332146): Worst-case setup slack is 18.064
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    18.356               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.208
+    Info (332119):    18.064               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.209
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.208               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.209               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.289
+Info (332146): Worst-case minimum pulse width slack is 9.295
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.289               0.000 MAX10_CLK1_50 
-    Info (332119):    19.801               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     9.295               0.000 MAX10_CLK1_50 
+    Info (332119):    19.803               0.000 grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Thu Mar 18 08:39:21 2021
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Thu Mar 18 17:23:55 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
