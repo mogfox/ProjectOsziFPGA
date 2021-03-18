@@ -1,0 +1,44 @@
+\documentclass{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\begin{document}
+
+\title{Pflichtenheft FPGA-Oszilloskop}
+\author{Radike, Sauer, Wolf}
+\date{\today}
+\maketitle
+\begin{tabular}[h]{l|l|l|l} %l = left c = center r = right
+		Version & Datum & Autor & Änderungsgrund/Bemerkungen\\
+		\hline
+		1.0 & 17.3.2021 & Sauer Lukas & Erstellung
+\end{tabular}
+\tableofcontents 
+\newpage
+
+\section{Übersicht}
+In diesem Dokument wird die Umsetztung der im Pflichtenheft angeführten Anforderungen beschrieben und ganau spezifiziert. 
+\subsection{Projektbeschreibung}
+Im Projekt Oszi wird ein Oszilloskop mittels eines FPGAs zu realisieren. Das Oszilloskop soll ein Frequenzband von 0Hz bis 1MHz einlesen und einen Spannungsbereich von -50V bis +50V abdecken. Die Spannungskurfe soll über ein Computerprogramm graphisch ausgegeben werden. Über das Programm soll ebenfalls der Spannungs- und Zeitbereich der Ausgabe einzustellen sein. Das Oszilloskop solle triggerbar sein und Tastköpfe kalibrieren können. Das Projekt besteht aus drei Aufgabenbereichen, dem Analog-Front-End, der Datenverarbeitung mit dem FPGA und der Ausgabe am PC.
+
+\subsection{Aufteilung}
+Das Projekt wird in drei, parallel laufende Teilbereiche geteilt. Diese sind voneinader größtenteils unabhängig, sind nur über eine Schnittstelle miteinander verbunden und werden von jewils einem Projektmitglied hauptsächlich bearbeitet:
+\begin{itemize}
+\item analog front end (siehe: \ref{wolf})
+\item digital data processing (siehe: \ref{sauer})
+\item user interface (siehe: \ref{radike})
+\end {itemize}
+
+
+\input{Pflichtenheft_Sauer2}
+\input{Pflichtenheft_Wolf}
+\input{Pflichtenheft_Radike}
+\end{document}

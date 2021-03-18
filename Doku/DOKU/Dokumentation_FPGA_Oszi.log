@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  11 MAR 2021 10:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  18 MAR 2021 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,24 +199,24 @@ File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 (./Dokumentation_FPGA_Oszi.aux)
 \openout1 = `Dokumentation_FPGA_Oszi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -240,7 +240,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 6.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -253,94 +253,140 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count270
 )
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
+LaTeX Info: Redefining \ref on input line 6.
+LaTeX Info: Redefining \pageref on input line 6.
+LaTeX Info: Redefining \nameref on input line 6.
 
 (./Dokumentation_FPGA_Oszi.out) (./Dokumentation_FPGA_Oszi.out)
 \@outlinefile=\write3
 \openout3 = `Dokumentation_FPGA_Oszi.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 11.
+(Font)              <14.4> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 11.
-
-(./SAUER/DOKU_SAUER.tex
-<SAUER/Grafiken/ADC_Arduino_Pins.PNG, id=25, 958.17975pt x 431.211pt>
-File: SAUER/Grafiken/ADC_Arduino_Pins.PNG Graphic file (type png)
-<use SAUER/Grafiken/ADC_Arduino_Pins.PNG>
-Package pdftex.def Info: SAUER/Grafiken/ADC_Arduino_Pins.PNG  used on input lin
-e 11.
-(pdftex.def)             Requested size: 426.79134pt x 192.06923pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 11--12
- [] 
- []
-
-<SAUER/Grafiken/ADC_Front-End.PNG, id=29, 800.9925pt x 320.397pt>
-File: SAUER/Grafiken/ADC_Front-End.PNG Graphic file (type png)
-<use SAUER/Grafiken/ADC_Front-End.PNG>
-Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End.PNG  used on input line 1
-9.
-(pdftex.def)             Requested size: 426.79134pt x 170.71892pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 19--20
- [] 
- []
-
-<SAUER/Grafiken/ADC_Front-End_Bode.PNG, id=30, 455.45157pt x 108.405pt>
-File: SAUER/Grafiken/ADC_Front-End_Bode.PNG Graphic file (type png)
-<use SAUER/Grafiken/ADC_Front-End_Bode.PNG>
-Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End_Bode.PNG  used on input l
-ine 26.
-(pdftex.def)             Requested size: 426.79134pt x 101.58476pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 26--27
- [] 
- []
-
+(Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[1
+(Font)              <6> on input line 13.
+ [1
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
-[2 <./SAUER/Grafiken/ADC_Arduino_Pins.PNG> <./SAUER/Grafiken/ADC_Front-End.PNG>
-]
-Overfull \hbox (91.0373pt too wide) in paragraph at lines 44--46
+\tf@toc=\write4
+\openout4 = `Dokumentation_FPGA_Oszi.toc'.
+
+[2] (./Vorwort/Vorwort.tex
+<SAUER/Grafiken/FotoSauer.jpg, id=17, 313.4109pt x 443.4969pt>
+File: SAUER/Grafiken/FotoSauer.jpg Graphic file (type jpg)
+<use SAUER/Grafiken/FotoSauer.jpg>
+Package pdftex.def Info: SAUER/Grafiken/FotoSauer.jpg  used on input line 14.
+(pdftex.def)             Requested size: 113.81102pt x 161.04604pt.
+) (./SAUER/DOKU_SAUER.tex (./SAUER/extADC.tex
+[3 <./SAUER/Grafiken/FotoSauer.jpg>]
+
+LaTeX Warning: Reference `ADC_Blockschaltbild' on page 4 undefined on input lin
+e 6.
+
+<SAUER/Grafiken/ADC_Arduino_Pins.PNG, id=29, 958.17975pt x 431.211pt>
+File: SAUER/Grafiken/ADC_Arduino_Pins.PNG Graphic file (type png)
+<use SAUER/Grafiken/ADC_Arduino_Pins.PNG>
+Package pdftex.def Info: SAUER/Grafiken/ADC_Arduino_Pins.PNG  used on input lin
+e 9.
+(pdftex.def)             Requested size: 426.79134pt x 192.06923pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 9--10
+ [] 
+ []
+
+
+LaTeX Warning: Reference `Schaltplan_FPGA' on page 4 undefined on input line 14
+.
+
+
+LaTeX Warning: Reference `Front-End_Schaltung' on page 4 undefined on input lin
+e 14.
+
+<SAUER/Grafiken/ADC_Front-End.PNG, id=31, 800.9925pt x 320.397pt>
+File: SAUER/Grafiken/ADC_Front-End.PNG Graphic file (type png)
+<use SAUER/Grafiken/ADC_Front-End.PNG>
+Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End.PNG  used on input line 1
+7.
+(pdftex.def)             Requested size: 426.79134pt x 170.71892pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 17--18
+ [] 
+ []
+
+<SAUER/Grafiken/ADC_Front-End_Bode.PNG, id=32, 455.45157pt x 108.405pt>
+File: SAUER/Grafiken/ADC_Front-End_Bode.PNG Graphic file (type png)
+<use SAUER/Grafiken/ADC_Front-End_Bode.PNG>
+Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End_Bode.PNG  used on input l
+ine 24.
+(pdftex.def)             Requested size: 426.79134pt x 101.58476pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 24--25
+ [] 
+ []
+
+
+LaTeX Warning: Reference `Front-End_Bode' on page 4 undefined on input line 29.
+
+
+
+Overfull \hbox (0.57512pt too wide) in paragraph at lines 6--30
+\OT1/cmr/m/n/12 ver-wen-det, so ist kein ex-tra Chip f^^?ur die Analog-Digital-
+Wandlung notwendig.
+ []
+
+
+Overfull \hbox (14.64827pt too wide) in paragraph at lines 6--30
+\OT1/cmr/m/n/12 in Ab-bil-dung [] zu se-hen. Das "ana-log Front-End"enthh^^?alt
+ einen Vorverst^^?arker,
+ []
+
+[4 <./SAUER/Grafiken/ADC_Arduino_Pins.PNG>])) (./Quellen/Quellen.tex [5 <./SAUE
+R/Grafiken/ADC_Front-End.PNG> <./SAUER/Grafiken/ADC_Front-End_Bode.PNG>]
+Overfull \hbox (91.0373pt too wide) in paragraph at lines 9--11
 [][]\OT1/cmr/m/n/12 Ubersicht: DE10-Lite-Board: DE10-Lite[]v.2.1.0[]SystemCD: D
 E10-Lite[]User[]Manual.pdf 
  []
 
 
-Overfull \hbox (16.3725pt too wide) in paragraph at lines 47--49
+Overfull \hbox (16.3725pt too wide) in paragraph at lines 12--14
 []\OT1/cmr/m/n/12 Schaltplan: DE10-Lite-Board: DE10-Lite[]v.2.1.0[]SystemCD: de
 10-lite.pdf 
  []
 
-) [3 <./SAUER/Grafiken/ADC_Front-End_Bode.PNG>] (./Dokumentation_FPGA_Oszi.aux)
-Package rerunfilecheck Info: File `Dokumentation_FPGA_Oszi.out' has not changed
-.
-(rerunfilecheck)             Checksum: 504829CFCA9752B400DFA79D471FBD0E;849.
+) [6] (./Dokumentation_FPGA_Oszi.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Dokumentation_FPGA_Oszi.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Dokumentation_FPGA_Oszi.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  99556AA6ED77698ABDBB921E1DB80890;1454.
  ) 
 Here is how much of TeX's memory you used:
- 7834 strings out of 479023
- 116311 string characters out of 5863351
- 420755 words of memory out of 5000000
- 25205 multiletter control sequences out of 15000+600000
+ 7860 strings out of 479023
+ 116732 string characters out of 5863351
+ 419408 words of memory out of 5000000
+ 25210 multiletter control sequences out of 15000+600000
  409451 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,7n,74p,943b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,11n,74p,977b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-di
@@ -350,10 +396,10 @@ c/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/
 texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Dokumentation_FPGA_Oszi.pdf (3 pages, 659606 bytes).
+Output written on Dokumentation_FPGA_Oszi.pdf (6 pages, 1302238 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

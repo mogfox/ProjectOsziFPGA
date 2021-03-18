@@ -1,0 +1,8 @@
+\subsection{Verwendung des externen ADCs}
+\subsubsection{Projektteilbereich Übersicht}
+ 
+\subsubsection{Ansteuerung}
+
+\subsubsection{VHDL Implementierung}
+Es wurde mit verschiedenen IP-Cores von Quartus versucht die ADCs anzusteuern.  Eine Implementierung mit dem IP-Core "Modular ADC core Intel FPGA IP" über das "Avalon"-Interface wurde probiert, schlug jedoch fehl, da der "Fitter" von Quartus Prime nicht für eine Ansteuerung ohne Nios-Prozessor ausgelegt ist.
+\textbf{Fazit:} Die internen ADCs im DE10-Lite Board können nur mit einem eigebetteten Nios Prozessor verwendet werden.

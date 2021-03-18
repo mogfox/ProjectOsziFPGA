@@ -2,6 +2,7 @@
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{hyperref}
+
 \begin{document}
 
 \title{Dokumentation}
@@ -9,6 +10,22 @@
 \date{\today}
 \maketitle
 
+\begin{tabular}[h]{l|l|l|l} %l = left c = center r = right
+	Version & Datum & Autor & Änderungsgrund/Bemerkungen\\
+	\hline
+	1.0 & 11.2.2021 & Sauer Lukas & Erstellung\\
+	\hline
+	1.1 & 25.2.2021 & Sauer Lukas & intADC\\
+	\hline
+	1.3 & 18.3.2021 & Sauer Lukas & Erstellung Vorwort \& ext. ADC\\
+\end{tabular}
+\newpage
+\tableofcontents
+\newpage
+
+\input{Vorwort/Vorwort}
+\section{Entwicklung}
 \input{SAUER/DOKU_SAUER}
+\input{Quellen/Quellen}
 
 \end{document}

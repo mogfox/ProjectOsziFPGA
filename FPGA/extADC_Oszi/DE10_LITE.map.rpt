@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE10_LITE
-Thu Mar 11 08:37:05 2021
+Thu Mar 18 08:38:52 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 11 08:37:05 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 18 08:38:52 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; DE10_LITE                                   ;
 ; Top-level Entity Name              ; DE10_Lite                                   ;
@@ -762,7 +762,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 11 08:36:48 2021
+    Info: Processing started: Thu Mar 18 08:38:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_LITE -c DE10_LITE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -789,7 +789,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file datauni
 Info (12127): Elaborating entity "DE10_LITE" for the top level hierarchy
 Info (12128): Elaborating entity "DataUnit" for hierarchy "DataUnit:dataFrontEnd" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 108
 Warning (10541): VHDL Signal Declaration warning at DataUnit.vhd(18): used implicit default value for signal "ADC_CH1_value_i" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DataUnit.vhd Line: 18
-Warning (10541): VHDL Signal Declaration warning at DataUnit.vhd(19): used implicit default value for signal "ADC_CH1_value_unsig" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DataUnit.vhd Line: 19
 Info (12128): Elaborating entity "grafic_gen" for hierarchy "grafic_gen:grafic_generator" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 117
 Warning (10036): Verilog HDL or VHDL warning at grafic_gen.vhd(36): object "CURRENT_X" assigned a value but never read File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/grafic_gen.vhd Line: 36
 Warning (10036): Verilog HDL or VHDL warning at grafic_gen.vhd(37): object "CURRENT_Y" assigned a value but never read File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/grafic_gen.vhd Line: 37
@@ -931,28 +930,28 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_B[2]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 27
     Warning (13410): Pin "VGA_B[3]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 27
     Warning (13410): Pin "HEX0[0]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
     Warning (13410): Pin "HEX0[4]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
     Warning (13410): Pin "HEX0[5]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
     Warning (13410): Pin "HEX0[7]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 31
     Warning (13410): Pin "HEX1[0]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
     Warning (13410): Pin "HEX1[4]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
     Warning (13410): Pin "HEX1[5]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
     Warning (13410): Pin "HEX1[7]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 32
     Warning (13410): Pin "HEX2[0]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
     Warning (13410): Pin "HEX2[4]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
     Warning (13410): Pin "HEX2[5]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
     Warning (13410): Pin "HEX2[7]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 33
     Warning (13410): Pin "HEX3[0]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 34
     Warning (13410): Pin "HEX3[1]" is stuck at VCC File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 34
@@ -998,10 +997,10 @@ Info (21057): Implemented 241 device resources after synthesis - the final resou
     Info (21060): Implemented 36 bidirectional pins
     Info (21061): Implemented 119 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 128 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Thu Mar 11 08:37:05 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 127 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Thu Mar 18 08:38:52 2021
     Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Total CPU time (on all processors): 00:00:31
 
 

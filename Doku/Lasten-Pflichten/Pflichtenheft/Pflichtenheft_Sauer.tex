@@ -1,0 +1,145 @@
+\section{digital signal processing} \label{sauer}
+\textbf{Zuständig für diesen Bereich: Sauer Lukas}\\
+\subsection{Vorwort}
+Dieser Teilbereich ist für das Einlesen, die temporiäre Speicherung, die digitale Verarbeitung und für das Weilterleiten der digitalen Messwerte zum user interface (siehe: \ref{radike}) verantwortlich. Die technisch schwieriger zu realisierenden Anforderungen an das System sind das digitale Filtern, die Kompensierung des Amplitudengangs sowie das triggern und Zusammenfassen in Pakete, welche zum user interface geschickt werden.\\
+In diesem Abschnitt des Projekts sind die Hardwarebeschreibungssprache VHDL und Kenntnisse in digitaler Signalverarbeitung besonders gefragt. Es wird sich hauptsächlich mit dem Entwicklungsboard "DE10-Lite" beschäftigt mit der der Software "Quartus Prime" und "ModelSim".
+
+\subsection{Projektvorbereitung}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 4 h\\
+	\hline
+	erledigt bis & / \\
+	\hline
+\end{tabular}
+
+Eine Ordnerstruktur wird aufgebaut, diese mit GitHub synchronisiert und alle benötigten Programme/ Software werden auf den neusten Stand gebracht.
+Dazu zählt:
+\begin{itemize}
+\item Quartus Prime 20.1
+\item ModelSim 20.1
+\item LTspice 17.0.21.0
+\item Notepad++ v7.7.1
+\item TeXworks 5.14.1 inklusive TeX Live 2020
+\item yEd Graph Editor 3.20.1
+\end {itemize}
+
+\subsection{Spezifikation Grundfunktionen}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 16 h\\
+	\hline
+	erledigt bis & / \\
+	\hline
+\end{tabular}
+Spezifikation des Projekts. Es werden die machbaren Grenzen für das FPGA-Oszilloskop abgeschätzt und erste Berechnungen angestellt. Hierzu zählt auch die Erstellung des Lasten- und Pflichtenhefts.
+
+\subsection{Quartus-Prime Projekterstellung}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 4 h\\
+	\hline
+	erledigt bis & / \\
+	\hline
+\end{tabular}
+Das Quartus-Prime Projekt wird an das DE10-Lite-Board abgestimmt und erste Testversuche werden unternommen. Der Code für die Hardwarebeschreibung wird auf mehrere Files aufgeteilt, verknüpft und in einer Top-Level-Design-Unit zusammengeführt. 
+
+\subsection{Interner ADC}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen \& fehlgeschlagen\\
+	\hline
+	beanspruchte Zeit & 16 h\\
+	\hline
+	erledigt bis & 4.03.2021 \\
+	\hline
+\end{tabular}
+Als erster Schritt wird der Interne ADC verwendet, um einen Datenstream herinzubekommen und erste Versuche für die weiter Datenverarbeitung auch ohne externen ADC zu ermöglichen. --> Fehlgeschlagen
+
+\subsection{externer ADC}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 4 h\\
+	\hline
+	erledigt bis & 4.03.2021 \\
+	\hline
+\end{tabular}
+Auswahl des externen ADCs. Absprache mit dem Zuständigen für das analog front end (siehe: \ref{wolf}), da der ADC die Schnittstelle der zwei Projekt-Teilbereiche darstellt.\\Es wird versucht die Messwerte vom ADC einzulesen.
+
+\subsection{externer ADC}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 8h \\
+	\hline
+	erledigt bis & 25.03.2021 \\
+	\hline
+\end{tabular}
+Es wird eine Design-Unit geschrieben, die einen Trigger realisiert, welcher später für das Zusammenfassen in Pakete essentiell sein wird. Optional kann dieser für Debugging-Zwecke verwendet werden.
+
+\subsection{PGA}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 8h \\
+	\hline
+	erledigt bis & 01.04.2021 \\
+	\hline
+\end{tabular}
+Der PGA soll mit dem PGA angesteuert werden. Hierfür wird eine eigene Design-Unit geschrieben. Wichtig für die automatische Messbereichsauswahl.
+
+\subsection{automatische Messbereichsauswahl}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 8h \\
+	\hline
+	erledigt bis & 08.04.2021 \\
+	\hline
+\end{tabular}
+Das FPGA-Oszi soll von alleine den geeigneten Messbereich ermitteln können und diesen dann über die PGA's einstellen.
+
+\subsection{kommunikation mit dem PC - user interface}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 20h \\
+	\hline
+	erledigt bis & 29.04.2021 \\
+	\hline
+\end{tabular}
+Die Messdaten sollen in geeigneten Paketen mit Zusatzinformationen, zB.: wie Messbereich, zum user interface (siehe: \ref{radike}) gesendet werden. Die Kommunikation soll in beide Richtungen funktionieren. Extra Chip auf Piggyback vorraussichtlich nötig.
+
+\subsection{digitale Signalverarbeitung}
+
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 24h \\
+	\hline
+	erledigt bis & 20.05.2021 \\
+	\hline
+\end{tabular}
+Es wird versucht den Frequenzgang des analogen Filters vor dem ADC zu kompensieren und optional zusätzlich digitale Filter einzubauen. In dieser Designunit werden zusätzlich die Daten zu Paketen zusammengefasst und für die Weiterleitung zum user  interface (siehe: \ref{radike}) bereit gestellt.
+

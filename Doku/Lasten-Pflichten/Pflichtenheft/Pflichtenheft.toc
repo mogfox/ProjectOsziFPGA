@@ -1,0 +1,17 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Übersicht}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Projektbeschreibung}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Aufteilung}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}digital signal processing}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Vorwort}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Quartus-Prime Projekterstellung}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Interner ADC}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}externer ADC}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}externer ADC}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}PGA}{3}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}automatische Messbereichsauswahl}{4}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}kommunikation mit dem PC - user interface}{4}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}digitale Signalverarbeitung}{4}{subsection.2.9}%
+\contentsline {section}{\numberline {3}analog front end}{4}{section.3}%
+\contentsline {section}{\numberline {4}user interface}{4}{section.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

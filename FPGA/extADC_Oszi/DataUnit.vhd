@@ -24,6 +24,6 @@ end DataUnit;
 architecture rtl of DataUnit is
 
 begin
-
+ADC_CH1_value_unsig <= "111111111111";
 
 end rtl;
