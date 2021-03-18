@@ -3,3 +3,5 @@ pause
 git add *
 git commit -m %date%
 git push origin master
+echo feritg
+pause
