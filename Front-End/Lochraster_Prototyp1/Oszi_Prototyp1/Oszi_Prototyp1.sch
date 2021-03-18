@@ -89,12 +89,12 @@ $EndComp
 $Comp
 L Device:C C3
 U 1 1 604A41B4
-P 9100 1200
-F 0 "C3" H 9215 1246 50  0000 L CNN
-F 1 "1uF" H 9215 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9138 1050 50  0001 C CNN
-F 3 "~" H 9100 1200 50  0001 C CNN
-	1    9100 1200
+P 5550 3300
+F 0 "C3" H 5665 3346 50  0000 L CNN
+F 1 "1uF" H 5665 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5588 3150 50  0001 C CNN
+F 3 "~" H 5550 3300 50  0001 C CNN
+	1    5550 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -135,12 +135,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 950  8100 950 
 Wire Wire Line
-	9100 1050 9100 950 
-Wire Wire Line
 	8600 1050 8600 950 
-Connection ~ 8600 950 
-Wire Wire Line
-	8600 950  9100 950 
 Wire Wire Line
 	8100 1050 8100 950 
 Connection ~ 8100 950 
@@ -151,12 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 1450 8100 1450
 Wire Wire Line
-	9100 1350 9100 1450
-Wire Wire Line
 	8600 1350 8600 1450
-Connection ~ 8600 1450
-Wire Wire Line
-	8600 1450 9100 1450
 Wire Wire Line
 	8100 1350 8100 1450
 Connection ~ 8100 1450
@@ -277,13 +267,6 @@ F 3 "" H 6250 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 3200 6250 3200
-Wire Wire Line
-	6250 3200 6250 2800
-Wire Wire Line
-	6650 2800 6250 2800
-Connection ~ 6250 2800
-Wire Wire Line
-	6250 2800 6250 2450
 $Comp
 L power:GND #PWR0111
 U 1 1 604BA90E
@@ -337,7 +320,7 @@ F 3 "" H 5950 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5950 3950 5950 3450
-Text Notes 9100 1650 0    50   ~ 0
+Text Notes 5400 3150 0    50   ~ 0
 place near\nVCM\n
 Wire Wire Line
 	6350 2900 6350 2700
@@ -347,12 +330,12 @@ Connection ~ 6350 2900
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 604C527E
-P 5350 2700
-F 0 "J2" H 5268 2375 50  0000 C CNN
-F 1 "input" H 5268 2466 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 5350 2700 50  0001 C CNN
-F 3 "~" H 5350 2700 50  0001 C CNN
-	1    5350 2700
+P 4950 2700
+F 0 "J2" H 4868 2375 50  0000 C CNN
+F 1 "input" H 4868 2466 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 4950 2700 50  0001 C CNN
+F 3 "~" H 4950 2700 50  0001 C CNN
+	1    4950 2700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -368,23 +351,21 @@ F 3 "~" H 5900 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 2600 6050 2600
-Wire Wire Line
-	5750 2600 5550 2600
 $Comp
 L power:GND #PWR0113
 U 1 1 604CA2F6
-P 5600 3950
-F 0 "#PWR0113" H 5600 3700 50  0001 C CNN
-F 1 "GND" H 5605 3777 50  0000 C CNN
-F 2 "" H 5600 3950 50  0001 C CNN
-F 3 "" H 5600 3950 50  0001 C CNN
-	1    5600 3950
+P 5200 3950
+F 0 "#PWR0113" H 5200 3700 50  0001 C CNN
+F 1 "GND" H 5205 3777 50  0000 C CNN
+F 2 "" H 5200 3950 50  0001 C CNN
+F 3 "" H 5200 3950 50  0001 C CNN
+	1    5200 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 3950 5600 2700
+	5200 3950 5200 2700
 Wire Wire Line
-	5600 2700 5550 2700
+	5200 2700 5150 2700
 $Comp
 L power:GND #PWR0114
 U 1 1 604CBD9F
@@ -565,4 +546,25 @@ NoConn ~ 7400 1550
 NoConn ~ 7300 1550
 NoConn ~ 7200 1550
 NoConn ~ 7100 1550
+Wire Wire Line
+	6250 2450 6250 3200
+Wire Wire Line
+	6650 2800 5550 2800
+Wire Wire Line
+	5550 2800 5550 3150
+$Comp
+L power:GND #PWR?
+U 1 1 6054611D
+P 5550 3950
+F 0 "#PWR?" H 5550 3700 50  0001 C CNN
+F 1 "GND" H 5555 3777 50  0000 C CNN
+F 2 "" H 5550 3950 50  0001 C CNN
+F 3 "" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3950 5550 3450
+Wire Wire Line
+	5150 2600 5750 2600
 $EndSCHEMATC

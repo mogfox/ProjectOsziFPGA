@@ -48,7 +48,7 @@ ADC_CH1_value_unsig(7) <= GPIO(14);
 ADC_CH1_value_unsig(8) <= GPIO(16);
 ADC_CH1_value_unsig(9) <= GPIO(18);
 ADC_CH1_value_unsig(10) <= GPIO(20);
-ADC_CH1_value_unsig(11) <= not GPIO(22);
+ADC_CH1_value_unsig(11) <=  GPIO(22);
 overflow <=  GPIO(24);
 
 GPIO(26) <= ADC_clock; --pin 31 

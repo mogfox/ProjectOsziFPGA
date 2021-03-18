@@ -1,5 +1,5 @@
 Fitter report for DE10_LITE
-Thu Mar 18 17:23:44 2021
+Thu Mar 18 23:26:44 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Mar 18 17:23:44 2021       ;
+; Fitter Status                      ; Successful - Thu Mar 18 23:26:44 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; DE10_LITE                                   ;
 ; Top-level Entity Name              ; DE10_Lite                                   ;
@@ -2102,10 +2102,10 @@ Warning (169064): Following 36 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[0] has a permanently disabled output enable File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
 Info (144001): Generated suppressed messages file D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 5383 megabytes
-    Info: Processing ended: Thu Mar 18 17:23:44 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 5382 megabytes
+    Info: Processing ended: Thu Mar 18 23:26:45 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +----------------------------+
