@@ -1,10 +1,26 @@
 \contentsline {section}{\numberline {1}Vorwort}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Projektübersicht}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Projektgruppe}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Projektbetreuer}{3}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Entwicklung}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Verwendung der internen ADCs}{3}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Projektteilbereich Übersicht}{3}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}ADC Hardware}{4}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}VHDL Implementierung}{6}{subsubsection.2.1.3}%
-\contentsline {section}{\numberline {3}Quellen und Hilfsmittel}{6}{section.3}%
+\contentsline {subsection}{\numberline {1.3}Projektbetreuer}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Entwicklung}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Top-Level-Design-Unit Grundstruktur}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Projektteilbereich Übersicht}{4}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Verwendung der internen ADCs}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Projektteilbereich Übersicht}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}ADC Hardware}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}VHDL Implementierung}{6}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}ADC-PCB "Prototype 1"}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Projektteilbereich Übersicht}{6}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Schaltplan}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}PCB}{7}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}externer ADC}{7}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Projektteilbereich Übersicht}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}LTC1420C technische Merkmale}{8}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}VHDL Implementierung}{8}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}erste Testversuche}{8}{subsubsection.2.4.4}%
+\contentsline {section}{\numberline {3}verwendete Messgeräte \& Entwicklungsboards}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}DE10-Lite Board}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Oszilloskop 1}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Quellen und Hilfsmittel}{10}{section.4}%
+\contentsline {paragraph}{Verwendung des DE10-Lite-Boards \& VHDL-Programmierung:}{10}{section*.2}%
+\contentsline {paragraph}{Datenblätter:}{12}{section*.3}%

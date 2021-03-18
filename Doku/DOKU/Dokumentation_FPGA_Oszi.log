@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  18 MAR 2021 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  18 MAR 2021 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -271,28 +271,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 13.
- [1
+
+Overfull \hbox (4.88817pt too wide) in paragraph at lines 13--22
+[][] 
+ []
+
+[1
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(./Dokumentation_FPGA_Oszi.toc)
 \tf@toc=\write4
 \openout4 = `Dokumentation_FPGA_Oszi.toc'.
 
-[2] (./Vorwort/Vorwort.tex
-<SAUER/Grafiken/FotoSauer.jpg, id=17, 313.4109pt x 443.4969pt>
+ [2] (./Vorwort/Vorwort.tex
+Overfull \hbox (2.3112pt too wide) in paragraph at lines 4--5
+\OT1/cmr/m/n/12 gramm soll eben-falls der Spannungs- und Zeit-bere-ich der Aus-
+gabe einzustellen
+ []
+
+<SAUER/Grafiken/FotoSauer.jpg, id=137, 313.4109pt x 443.4969pt>
 File: SAUER/Grafiken/FotoSauer.jpg Graphic file (type jpg)
 <use SAUER/Grafiken/FotoSauer.jpg>
 Package pdftex.def Info: SAUER/Grafiken/FotoSauer.jpg  used on input line 14.
 (pdftex.def)             Requested size: 113.81102pt x 161.04604pt.
-) (./SAUER/DOKU_SAUER.tex (./SAUER/extADC.tex
-[3 <./SAUER/Grafiken/FotoSauer.jpg>]
-
-LaTeX Warning: Reference `ADC_Blockschaltbild' on page 4 undefined on input lin
-e 6.
-
-<SAUER/Grafiken/ADC_Arduino_Pins.PNG, id=29, 958.17975pt x 431.211pt>
+) [3 <./SAUER/Grafiken/FotoSauer.jpg>] (./SAUER/DOKU_SAUER.tex
+(./SAUER/TopLevelDesignUnit.tex) (./SAUER/intADC.tex
+<SAUER/Grafiken/ADC_Arduino_Pins.PNG, id=143, 958.17975pt x 431.211pt>
 File: SAUER/Grafiken/ADC_Arduino_Pins.PNG Graphic file (type png)
 <use SAUER/Grafiken/ADC_Arduino_Pins.PNG>
 Package pdftex.def Info: SAUER/Grafiken/ADC_Arduino_Pins.PNG  used on input lin
@@ -303,15 +307,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 9--10
  [] 
  []
 
-
-LaTeX Warning: Reference `Schaltplan_FPGA' on page 4 undefined on input line 14
-.
-
-
-LaTeX Warning: Reference `Front-End_Schaltung' on page 4 undefined on input lin
-e 14.
-
-<SAUER/Grafiken/ADC_Front-End.PNG, id=31, 800.9925pt x 320.397pt>
+<SAUER/Grafiken/ADC_Front-End.PNG, id=147, 800.9925pt x 320.397pt>
 File: SAUER/Grafiken/ADC_Front-End.PNG Graphic file (type png)
 <use SAUER/Grafiken/ADC_Front-End.PNG>
 Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End.PNG  used on input line 1
@@ -322,7 +318,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 17--18
  [] 
  []
 
-<SAUER/Grafiken/ADC_Front-End_Bode.PNG, id=32, 455.45157pt x 108.405pt>
+<SAUER/Grafiken/ADC_Front-End_Bode.PNG, id=148, 455.45157pt x 108.405pt>
 File: SAUER/Grafiken/ADC_Front-End_Bode.PNG Graphic file (type png)
 <use SAUER/Grafiken/ADC_Front-End_Bode.PNG>
 Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End_Bode.PNG  used on input l
@@ -334,59 +330,151 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 24--25
  []
 
 
-LaTeX Warning: Reference `Front-End_Bode' on page 4 undefined on input line 29.
-
-
-
 Overfull \hbox (0.57512pt too wide) in paragraph at lines 6--30
 \OT1/cmr/m/n/12 ver-wen-det, so ist kein ex-tra Chip f^^?ur die Analog-Digital-
 Wandlung notwendig.
  []
 
 
-Overfull \hbox (14.64827pt too wide) in paragraph at lines 6--30
-\OT1/cmr/m/n/12 in Ab-bil-dung [] zu se-hen. Das "ana-log Front-End"enthh^^?alt
- einen Vorverst^^?arker,
+Overfull \hbox (7.77321pt too wide) in paragraph at lines 6--30
+\OT1/cmr/m/n/12 in Ab-bil-dung []1[] zu se-hen. Das "ana-log Front-End"enthh^^?
+alt einen Vorverst^^?arker,
  []
 
-[4 <./SAUER/Grafiken/ADC_Arduino_Pins.PNG>])) (./Quellen/Quellen.tex [5 <./SAUE
-R/Grafiken/ADC_Front-End.PNG> <./SAUER/Grafiken/ADC_Front-End_Bode.PNG>]
-Overfull \hbox (91.0373pt too wide) in paragraph at lines 9--11
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5 <./SAUER/Grafiken/ADC_Arduino_Pins.PNG> <./SAUER/Grafiken/ADC_Front-End.
+PNG>]) (./SAUER/ADC-PCB.tex
+<SAUER/Grafiken/Prot1/Prot1_Schalt.png, id=168, 670.30424pt x 476.37975pt>
+File: SAUER/Grafiken/Prot1/Prot1_Schalt.png Graphic file (type png)
+<use SAUER/Grafiken/Prot1/Prot1_Schalt.png>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/Prot1_Schalt.png  used on input l
+ine 9.
+(pdftex.def)             Requested size: 426.79134pt x 303.32643pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 9--10
+ [] 
+ []
+
+[6 <./SAUER/Grafiken/ADC_Front-End_Bode.PNG>]
+<SAUER/Grafiken/Prot1/3DF.png, id=180, 723.9045pt x 389.65575pt>
+File: SAUER/Grafiken/Prot1/3DF.png Graphic file (type png)
+<use SAUER/Grafiken/Prot1/3DF.png>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/3DF.png  used on input line 19.
+(pdftex.def)             Requested size: 426.79134pt x 229.73436pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 19--20
+ [] 
+ []
+
+<SAUER/Grafiken/Prot1/3DB.png, id=181, 688.974pt x 407.72325pt>
+File: SAUER/Grafiken/Prot1/3DB.png Graphic file (type png)
+<use SAUER/Grafiken/Prot1/3DB.png>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/3DB.png  used on input line 25.
+(pdftex.def)             Requested size: 426.79134pt x 252.56804pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 25--26
+ [] 
+ []
+
+<SAUER/Grafiken/Prot1/Foto.jpeg, id=182, 589.4522pt x 336.50719pt>
+File: SAUER/Grafiken/Prot1/Foto.jpeg Graphic file (type jpg)
+<use SAUER/Grafiken/Prot1/Foto.jpeg>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/Foto.jpeg  used on input line 31.
+
+(pdftex.def)             Requested size: 426.79134pt x 243.6508pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 31--32
+ [] 
+ []
+
+<SAUER/Grafiken/Prot1/FCU.png, id=183, 729.927pt x 324.0105pt>
+File: SAUER/Grafiken/Prot1/FCU.png Graphic file (type png)
+<use SAUER/Grafiken/Prot1/FCU.png>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/FCU.png  used on input line 37.
+(pdftex.def)             Requested size: 426.79134pt x 189.4539pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 37--38
+ [] 
+ []
+
+<SAUER/Grafiken/Prot1/FFAB.png, id=184, 733.5405pt x 326.4195pt>
+File: SAUER/Grafiken/Prot1/FFAB.png Graphic file (type png)
+<use SAUER/Grafiken/Prot1/FFAB.png>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/FFAB.png  used on input line 43.
+(pdftex.def)             Requested size: 426.79134pt x 189.91614pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 43--44
+ [] 
+ []
+
+<SAUER/Grafiken/Prot1/BFAB.png, id=185, 652.839pt x 317.38576pt>
+File: SAUER/Grafiken/Prot1/BFAB.png Graphic file (type png)
+<use SAUER/Grafiken/Prot1/BFAB.png>
+Package pdftex.def Info: SAUER/Grafiken/Prot1/BFAB.png  used on input line 49.
+(pdftex.def)             Requested size: 426.79134pt x 207.49449pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 49--50
+ [] 
+ []
+
+) (./SAUER/extADC.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./SAUER/Grafiken/Prot1/Prot1_Schalt.PNG>])) (./Geraete/Geraete.tex
+Overfull \hbox (27.2418pt too wide) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/17.28 verwendete Mess-ger^^?ate & En-twick-lungs-boards 
+ []
+
+[8 <./SAUER/Grafiken/Prot1/3DF.PNG>]) (./Quellen/Quellen.tex [9 <./SAUER/Grafik
+en/Prot1/3DB.PNG>]
+Overfull \hbox (91.0373pt too wide) in paragraph at lines 5--7
 [][]\OT1/cmr/m/n/12 Ubersicht: DE10-Lite-Board: DE10-Lite[]v.2.1.0[]SystemCD: D
 E10-Lite[]User[]Manual.pdf 
  []
 
-
-Overfull \hbox (16.3725pt too wide) in paragraph at lines 12--14
+[10 <./SAUER/Grafiken/Prot1/Foto.jpeg> <./SAUER/Grafiken/Prot1/FCU.PNG>]
+Overfull \hbox (16.3725pt too wide) in paragraph at lines 8--10
 []\OT1/cmr/m/n/12 Schaltplan: DE10-Lite-Board: DE10-Lite[]v.2.1.0[]SystemCD: de
 10-lite.pdf 
  []
 
-) [6] (./Dokumentation_FPGA_Oszi.aux)
+[11 <./SAUER/Grafiken/Prot1/FFAB.PNG> <./SAUER/Grafiken/Prot1/BFAB.PNG>]
+Overfull \hbox (54.64467pt too wide) in paragraph at lines 15--16
+[]\OT1/cmr/bx/n/12 LTC1420C: \OT1/cmr/m/n/12 https://www.analog.com/media/en/te
+chnical-documentation/data-
+ []
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Dokumentation_FPGA_Oszi.out' has changed.
-
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Dokumentation_FPGA_Oszi.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  99556AA6ED77698ABDBB921E1DB80890;1454.
+) [12] (./Dokumentation_FPGA_Oszi.aux)
+Package rerunfilecheck Info: File `Dokumentation_FPGA_Oszi.out' has not changed
+.
+(rerunfilecheck)             Checksum: 1E0C40F3AE791910FBB09325DB69FA85;3900.
  ) 
 Here is how much of TeX's memory you used:
- 7860 strings out of 479023
- 116732 string characters out of 5863351
- 419408 words of memory out of 5000000
- 25210 multiletter control sequences out of 15000+600000
+ 7985 strings out of 479023
+ 119196 string characters out of 5863351
+ 423156 words of memory out of 5000000
+ 25281 multiletter control sequences out of 15000+600000
  409451 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,74p,977b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,11n,74p,977b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-di
@@ -396,10 +484,10 @@ c/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/
 texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Dokumentation_FPGA_Oszi.pdf (6 pages, 1302238 bytes).
+Output written on Dokumentation_FPGA_Oszi.pdf (12 pages, 1764131 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

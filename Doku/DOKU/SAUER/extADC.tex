@@ -1,8 +1,8 @@
-\subsection{Verwendung des externen ADCs}
+\subsection{externer ADC}\label{extADC}
 \subsubsection{Projektteilbereich Übersicht}
- 
-\subsubsection{Ansteuerung}
-
+ Die Wahl des externen ADCs ist auf den LTC1420C gefallen. Dieser besitzt eine Auflösung von 12-Bit bei einer Abtastrate von 10MSa/s.  Ausgelesen werden die Messwerte vom FPGA parallel über 12 digitale Ausgänge. Der ADC benötigt keine Referezspannung, da diese intern erzeugt wird, jedoch eine Clock von 10Mhz muss bereit gestellt werden.
+\subsubsection{LTC1420C technische Merkmale} \label{LTC1420C}
+Das Datenblatt wurde unter den Quellen verlinkt, siehe \ref{LTC1420C_dat}
 \subsubsection{VHDL Implementierung}
-Es wurde mit verschiedenen IP-Cores von Quartus versucht die ADCs anzusteuern.  Eine Implementierung mit dem IP-Core "Modular ADC core Intel FPGA IP" über das "Avalon"-Interface wurde probiert, schlug jedoch fehl, da der "Fitter" von Quartus Prime nicht für eine Ansteuerung ohne Nios-Prozessor ausgelegt ist.
-\textbf{Fazit:} Die internen ADCs im DE10-Lite Board können nur mit einem eigebetteten Nios Prozessor verwendet werden.
+\subsubsection{erste Testversuche}
+Für die ersten Testversuche wurde das \textit{Oszilloskop 1 (\ref{Oszi1})} verwendet.
