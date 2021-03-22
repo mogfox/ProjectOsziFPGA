@@ -38,6 +38,14 @@ component ADCinterface is
 	);
 end component ADCinterface;
 
+component selfStimulus is
+	port( 	
+		RESET_n			:  in std_logic;	--master reset
+		CLK				:  in std_logic;	
+		GPIO    		: inout std_logic_vector(0 to 35)
+	);
+end component selfStimulus;
+
 begin
 
 ADCs: component ADCinterface
@@ -50,4 +58,13 @@ ADCs: component ADCinterface
 		enable				=> '0',
 		ADC_CH1_value_unsig	=> ADC_CH1_value_unsig
 	);
+	
+selfTest: component selfStimulus
+	port map(
+		RESET_n				=> RESET_n,	
+		CLK					=> CLK,	
+		
+		GPIO    			=> GPIO
+	);
+	
 end rtl;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE10_LITE
-Thu Mar 18 23:26:29 2021
+Fri Mar 19 14:57:43 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -53,15 +53,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 18 23:26:29 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 19 14:57:43 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; DE10_LITE                                   ;
 ; Top-level Entity Name              ; DE10_Lite                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 141                                         ;
-;     Total combinational functions  ; 140                                         ;
-;     Dedicated logic registers      ; 71                                          ;
-; Total registers                    ; 71                                          ;
+; Total logic elements               ; 225                                         ;
+;     Total combinational functions  ; 224                                         ;
+;     Dedicated logic registers      ; 134                                         ;
+; Total registers                    ; 134                                         ;
 ; Total pins                         ; 121                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -180,6 +180,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; selfStimulus.vhd                 ; yes             ; User VHDL File               ; D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/selfStimulus.vhd                ;         ;
 ; ADCinterface.vhd                 ; yes             ; User VHDL File               ; D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/ADCinterface.vhd                ;         ;
 ; VGA_Interface.vhd                ; yes             ; User VHDL File               ; D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/VGA_Interface.vhd               ;         ;
 ; IO.vhd                           ; yes             ; User VHDL File               ; D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/IO.vhd                          ;         ;
@@ -199,39 +200,39 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                                                              ;
-+---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                                                                      ;
-+---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 141                                                                                                                        ;
-;                                             ;                                                                                                                            ;
-; Total combinational functions               ; 140                                                                                                                        ;
-; Logic element usage by number of LUT inputs ;                                                                                                                            ;
-;     -- 4 input functions                    ; 60                                                                                                                         ;
-;     -- 3 input functions                    ; 9                                                                                                                          ;
-;     -- <=2 input functions                  ; 71                                                                                                                         ;
-;                                             ;                                                                                                                            ;
-; Logic elements by mode                      ;                                                                                                                            ;
-;     -- normal mode                          ; 80                                                                                                                         ;
-;     -- arithmetic mode                      ; 60                                                                                                                         ;
-;                                             ;                                                                                                                            ;
-; Total registers                             ; 71                                                                                                                         ;
-;     -- Dedicated logic registers            ; 71                                                                                                                         ;
-;     -- I/O registers                        ; 0                                                                                                                          ;
-;                                             ;                                                                                                                            ;
-; I/O pins                                    ; 121                                                                                                                        ;
-;                                             ;                                                                                                                            ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                                                                          ;
-;                                             ;                                                                                                                            ;
-; Total PLLs                                  ; 2                                                                                                                          ;
-;     -- PLLs                                 ; 2                                                                                                                          ;
-;                                             ;                                                                                                                            ;
-; Maximum fan-out node                        ; grafic_gen:grafic_generator|DivByTwo:DivByTwo_inst|altpll:altpll_component|DivByTwo_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 71                                                                                                                         ;
-; Total fan-out                               ; 880                                                                                                                        ;
-; Average fan-out                             ; 1.79                                                                                                                       ;
-+---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 225                      ;
+;                                             ;                          ;
+; Total combinational functions               ; 224                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 79                       ;
+;     -- 3 input functions                    ; 40                       ;
+;     -- <=2 input functions                  ; 105                      ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 104                      ;
+;     -- arithmetic mode                      ; 120                      ;
+;                                             ;                          ;
+; Total registers                             ; 134                      ;
+;     -- Dedicated logic registers            ; 134                      ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 121                      ;
+;                                             ;                          ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+;                                             ;                          ;
+; Total PLLs                                  ; 2                        ;
+;     -- PLLs                                 ; 2                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; IO:INandOUT|push_reset_n ;
+; Maximum fan-out                             ; 134                      ;
+; Total fan-out                               ; 1379                     ;
+; Average fan-out                             ; 2.16                     ;
++---------------------------------------------+--------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -239,18 +240,19 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                             ; Entity Name          ; Library Name ;
 +------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |DE10_Lite                                           ; 140 (0)             ; 71 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 121  ; 0            ; 0          ; |DE10_Lite                                                                                                                                      ; DE10_Lite            ; work         ;
-;    |DataUnit:dataFrontEnd|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd                                                                                                                ; DataUnit             ; work         ;
+; |DE10_Lite                                           ; 224 (0)             ; 134 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 121  ; 0            ; 0          ; |DE10_Lite                                                                                                                                      ; DE10_Lite            ; work         ;
+;    |DataUnit:dataFrontEnd|                           ; 85 (0)              ; 63 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd                                                                                                                ; DataUnit             ; work         ;
 ;       |ADCinterface:ADCs|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd|ADCinterface:ADCs                                                                                              ; ADCinterface         ; work         ;
 ;          |ADC_prescaler:ADC_prescaler_inst|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd|ADCinterface:ADCs|ADC_prescaler:ADC_prescaler_inst                                                             ; ADC_prescaler        ; work         ;
 ;             |altpll:altpll_component|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd|ADCinterface:ADCs|ADC_prescaler:ADC_prescaler_inst|altpll:altpll_component                                     ; altpll               ; work         ;
 ;                |ADC_prescaler_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd|ADCinterface:ADCs|ADC_prescaler:ADC_prescaler_inst|altpll:altpll_component|ADC_prescaler_altpll:auto_generated ; ADC_prescaler_altpll ; work         ;
+;       |selfStimulus:selfTest|                        ; 85 (85)             ; 63 (63)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|DataUnit:dataFrontEnd|selfStimulus:selfTest                                                                                          ; selfStimulus         ; work         ;
 ;    |IO:INandOUT|                                     ; 22 (22)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|IO:INandOUT                                                                                                                          ; IO                   ; work         ;
-;    |grafic_gen:grafic_generator|                     ; 118 (0)             ; 71 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator                                                                                                          ; grafic_gen           ; work         ;
+;    |grafic_gen:grafic_generator|                     ; 117 (0)             ; 71 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator                                                                                                          ; grafic_gen           ; work         ;
 ;       |DivByTwo:DivByTwo_inst|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator|DivByTwo:DivByTwo_inst                                                                                   ; DivByTwo             ; work         ;
 ;          |altpll:altpll_component|                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator|DivByTwo:DivByTwo_inst|altpll:altpll_component                                                           ; altpll               ; work         ;
 ;             |DivByTwo_altpll:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator|DivByTwo:DivByTwo_inst|altpll:altpll_component|DivByTwo_altpll:auto_generated                            ; DivByTwo_altpll      ; work         ;
-;       |VGA_Interface:VGA_Anschluss|                  ; 118 (118)           ; 70 (70)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss                                                                              ; VGA_Interface        ; work         ;
+;       |VGA_Interface:VGA_Anschluss|                  ; 117 (117)           ; 70 (70)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss                                                                              ; VGA_Interface        ; work         ;
 +------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -297,12 +299,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 71    ;
-; Number of registers using Synchronous Clear  ; 31    ;
+; Total registers                              ; 134   ;
+; Number of registers using Synchronous Clear  ; 62    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 71    ;
+; Number of registers using Asynchronous Clear ; 134   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 31    ;
+; Number of registers using Clock Enable       ; 62    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -318,14 +320,14 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; 8:1                ; 31 bits   ; 155 LEs       ; 31 LEs               ; 124 LEs                ; Yes        ; |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss|pt_counter[4] ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; No         ; |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss|Selector78    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+; 8:1                ; 31 bits   ; 155 LEs       ; 31 LEs               ; 124 LEs                ; Yes        ; |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss|pt_counter[24] ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; No         ; |DE10_Lite|grafic_gen:grafic_generator|VGA_Interface:VGA_Anschluss|Selector78     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1128,24 +1130,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 121                         ;
-; cycloneiii_ff         ; 71                          ;
-;     CLR               ; 9                           ;
-;     CLR SCLR          ; 31                          ;
-;     ENA CLR           ; 31                          ;
+; cycloneiii_ff         ; 134                         ;
+;     CLR               ; 10                          ;
+;     CLR SCLR          ; 62                          ;
+;     ENA CLR           ; 62                          ;
 ; cycloneiii_io_obuf    ; 36                          ;
-; cycloneiii_lcell_comb ; 147                         ;
-;     arith             ; 60                          ;
-;         2 data inputs ; 60                          ;
-;     normal            ; 87                          ;
+; cycloneiii_lcell_comb ; 231                         ;
+;     arith             ; 120                         ;
+;         2 data inputs ; 91                          ;
+;         3 data inputs ; 29                          ;
+;     normal            ; 111                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 60                          ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 79                          ;
 ; cycloneiii_pll        ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.35                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1154,7 +1157,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -1164,10 +1167,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 18 23:26:11 2021
+    Info: Processing started: Fri Mar 19 14:57:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_LITE -c DE10_LITE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file selfstimulus.vhd
+    Info (12022): Found design unit 1: selfStimulus-rtl File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/selfStimulus.vhd Line: 23
+    Info (12023): Found entity 1: selfStimulus File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/selfStimulus.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file adcinterface.vhd
     Info (12022): Found design unit 1: ADCinterface-rtl File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/ADCinterface.vhd Line: 27
     Info (12023): Found entity 1: ADCinterface File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/ADCinterface.vhd Line: 14
@@ -1197,7 +1203,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file adc_pre
 Info (12127): Elaborating entity "DE10_LITE" for the top level hierarchy
 Info (12128): Elaborating entity "DataUnit" for hierarchy "DataUnit:dataFrontEnd" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 111
 Warning (10541): VHDL Signal Declaration warning at DataUnit.vhd(21): used implicit default value for signal "ADC_CH1_value_i" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DataUnit.vhd Line: 21
-Info (12128): Elaborating entity "ADCinterface" for hierarchy "DataUnit:dataFrontEnd|ADCinterface:ADCs" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DataUnit.vhd Line: 43
+Info (12128): Elaborating entity "ADCinterface" for hierarchy "DataUnit:dataFrontEnd|ADCinterface:ADCs" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DataUnit.vhd Line: 51
 Warning (10036): Verilog HDL or VHDL warning at ADCinterface.vhd(29): object "overflow" assigned a value but never read File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/ADCinterface.vhd Line: 29
 Info (12128): Elaborating entity "ADC_prescaler" for hierarchy "DataUnit:dataFrontEnd|ADCinterface:ADCs|ADC_prescaler:ADC_prescaler_inst" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/ADCinterface.vhd Line: 56
 Info (12128): Elaborating entity "altpll" for hierarchy "DataUnit:dataFrontEnd|ADCinterface:ADCs|ADC_prescaler:ADC_prescaler_inst|altpll:altpll_component" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/ADC_prescaler/ADC_prescaler.vhd Line: 136
@@ -1260,6 +1266,8 @@ Info (12133): Instantiated megafunction "DataUnit:dataFrontEnd|ADCinterface:ADCs
 Info (12021): Found 1 design units, including 1 entities, in source file db/adc_prescaler_altpll.v
     Info (12023): Found entity 1: ADC_prescaler_altpll File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/db/adc_prescaler_altpll.v Line: 30
 Info (12128): Elaborating entity "ADC_prescaler_altpll" for hierarchy "DataUnit:dataFrontEnd|ADCinterface:ADCs|ADC_prescaler:ADC_prescaler_inst|altpll:altpll_component|ADC_prescaler_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "selfStimulus" for hierarchy "DataUnit:dataFrontEnd|selfStimulus:selfTest" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DataUnit.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at selfStimulus.vhd(50): signal "RESET_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/selfStimulus.vhd Line: 50
 Info (12128): Elaborating entity "grafic_gen" for hierarchy "grafic_gen:grafic_generator" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 121
 Warning (10036): Verilog HDL or VHDL warning at grafic_gen.vhd(36): object "CURRENT_X" assigned a value but never read File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/grafic_gen.vhd Line: 36
 Warning (10036): Verilog HDL or VHDL warning at grafic_gen.vhd(37): object "CURRENT_Y" assigned a value but never read File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/grafic_gen.vhd Line: 37
@@ -1344,6 +1352,18 @@ Warning (10540): VHDL Signal Declaration warning at IO.vhd(31): used explicit de
 Warning (10540): VHDL Signal Declaration warning at IO.vhd(32): used explicit default value for signal "HEX5" because signal was never assigned a value File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/IO.vhd Line: 32
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[26]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[23]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[21]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[19]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[17]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[15]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[13]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[11]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[7]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[5]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[3]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[1]" and its non-tri-state driver. File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[35]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[34]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
@@ -1356,34 +1376,34 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[27]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[25]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[24]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[22]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[20]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[18]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[16]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[14]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[12]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[10]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[8]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[6]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[4]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[2]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
-    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
     Warning (13040): bidirectional pin "GPIO[0]" has no driver File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
 Info (13000): Registers with preset signals will power-up high File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/VGA_Interface.vhd Line: 24
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO[26]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[23]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[21]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[19]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[17]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[15]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[13]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[11]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[9]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[7]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[5]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[3]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
+    Warning (13010): Node "GPIO[1]~synth" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 23
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_G[0]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 26
     Warning (13410): Pin "VGA_G[1]" is stuck at GND File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 26
@@ -1444,16 +1464,16 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 21
     Warning (15610): No output dependent on input pin "SW[8]" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 21
     Warning (15610): No output dependent on input pin "SW[9]" File: D:/Semesterprojekt/ProjectOsziFPGA/FPGA/extADC_Oszi/DE10_LITE.vhd Line: 21
-Info (21057): Implemented 264 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 348 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 72 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 141 logic cells
+    Info (21061): Implemented 225 logic cells
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 110 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Thu Mar 18 23:26:29 2021
-    Info: Elapsed time: 00:00:18
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 123 warnings
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Fri Mar 19 14:57:43 2021
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:28
 
 

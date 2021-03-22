@@ -1,5 +1,5 @@
 Flow report for DE10_LITE
-Thu Mar 18 23:26:55 2021
+Fri Mar 19 14:58:07 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 18 23:26:50 2021       ;
+; Flow Status                        ; Successful - Fri Mar 19 14:58:02 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; DE10_LITE                                   ;
 ; Top-level Entity Name              ; DE10_Lite                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 142 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 142 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 71 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 71                                          ;
+; Total logic elements               ; 226 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 226 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 134 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 134                                         ;
 ; Total pins                         ; 121 / 360 ( 34 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/18/2021 23:26:12 ;
+; Start date & time ; 03/19/2021 14:57:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE10_LITE           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 132983444149460.161610637109660        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 132983444149460.161616225001676        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; DivByTwo_inst.vhd                      ; --            ; --          ; --         ;
@@ -101,11 +101,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4795 MB             ; 00:00:28                           ;
-; Fitter               ; 00:00:14     ; 1.0                     ; 5382 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4688 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4803 MB             ; 00:00:04                           ;
-; Total                ; 00:00:39     ; --                      ; --                  ; 00:00:51                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4802 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:13     ; 1.0                     ; 5388 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4692 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 4804 MB             ; 00:00:04                           ;
+; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

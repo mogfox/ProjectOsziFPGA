@@ -2,8 +2,16 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : 14.769
+TNS   : 0.000
+
 Type  : Slow 1200mV 85C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 15.383
+Slack : 15.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
@@ -11,43 +19,59 @@ Slack : 0.418
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.669
+Slack : 9.650
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.724
+Slack : 19.720
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : 15.191
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 15.881
+Slack : 15.942
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.307
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.339
+Slack : 0.337
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.718
+Slack : 9.655
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.712
+Slack : 19.710
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 18.064
+Slack : 17.814
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : 17.824
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.149
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.209
+Slack : 0.207
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
-Slack : 9.295
+Slack : 9.333
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'grafic_generator|DivByTwo_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.803
+Slack : 19.795
 TNS   : 0.000
 
 ------------------------------------------------------------
