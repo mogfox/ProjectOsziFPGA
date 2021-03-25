@@ -1,0 +1,242 @@
+%Lukas Sauer 2021
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\begin{document}
+
+\title{Arbeitspakete im Detail}
+\author{Sauer Lukas Josef}
+\date{\today}
+\maketitle
+
+\tableofcontents 
+\newpage
+
+\section{Übersicht}
+In diesem Dokument wird das Projekt in einzelne Pakete unterteilt und diese im Detail beschrieben. Informationen bezüglich Dauer, Kosten und Abhängigkeiten stehen im Mittelpunkt. Es wird ausschließlich der Zuständigkeitsbereich des Schülers Sauer angeführt.
+\section{Arbeitspakete Lukas Sauer}
+\subsection{Projektvorbereitung}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 4 h\\
+	\hline
+	erledigt bis & / \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & Radike, Wolf\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Eine Ordnerstruktur wird aufgebaut, diese mit GitHub synchronisiert und alle benötigten Programme/ Software werden auf den neusten Stand gebracht. Alle Projektteilnehmer arebietten hier zusammen, um alles auf dem selben Stand und kompatibel zu haben.
+Dazu zählt:
+\begin{itemize}
+\item Quartus Prime 20.1
+\item ModelSim 20.1
+\item LTspice 17.0.21.0
+\item Notepad++ v7.7.1
+\item TeXworks 5.14.1 inklusive TeX Live 2020
+\item yEd Graph Editor 3.20.1
+\end {itemize}
+\subsection{Spezifikation Grundfunktionen}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 16 h\\
+	\hline
+	erledigt bis & / \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & Radike, Wolf\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Spezifikation des Projekts. Es werden gemeinsam durch alle Gruppenmitglieder die machbaren Grenzen für das FPGA-Oszilloskop abgeschätzt und erste Berechnungen angestellt. Hierzu zählt auch die Erstellung des Lasten- und Pflichtenhefts.
+\subsection{Quartus-Prime Projekterstellung}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 4 h\\
+	\hline
+	erledigt bis & / \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & /\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Das Quartus-Prime Projekt wird an das DE10-Lite-Board abgestimmt und erste Testversuche werden unternommen. Der Code für die Hardwarebeschreibung wird auf mehrere Files aufgeteilt, verknüpft und in einer Top-Level-Design-Unit zusammengeführt. 
+\subsection{Interner ADC}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen \& fehlgeschlagen\\
+	\hline
+	beanspruchte Zeit & 16 h\\
+	\hline
+	erledigt bis & 4.03.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 60 €\\
+	\hline
+	Abhängigkeit & /\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Als erster Schritt wird der Interne ADC verwendet, um einen Datenstream herinzubekommen und erste Versuche für die weiter Datenverarbeitung auch ohne externen ADC zu ermöglichen. --> Fehlgeschlagen
+Hier wird als erstes das FPGA-Board ''DE10-Light'' verwendet. Muss dieses neu gekauft werden, so belaufen sich die Kosten dafür um die 60€
+\subsection{externer ADC}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & abgeschlossen\\
+	\hline
+	beanspruchte Zeit & 4 h\\
+	\hline
+	erledigt bis & 4.03.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 30 €\\
+	\hline
+	Abhängigkeit & Wolf\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Auswahl des externen ADCs. Absprache mit dem Zuständigen für das analog front end, da der ADC die Schnittstelle der zwei Projekt-Teilbereiche darstellt.\\Es wird versucht die Messwerte vom ADC einzulesen. Der gewählte ADC kostet um die 10€. Für diesen sind zusätzliche Teile für ein erstets Test-Board notwendig ~ 15€. Es wurden zwei ADCs bestellt.
+\subsection{triggern}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 8h \\
+	\hline
+	erledigt bis & 25.03.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & /\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Es wird eine Design-Unit geschrieben, die einen Trigger realisiert, welcher später für das Zusammenfassen in Pakete essentiell sein wird. Optional kann dieser für Debugging-Zwecke verwendet werden. 
+\subsection{PGA}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 8h \\
+	\hline
+	erledigt bis & 01.04.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & Wolf\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Der PGA soll mit dem PGA angesteuert werden. Hierfür wird eine eigene Design-Unit geschrieben. Wichtig für die automatische Messbereichsauswahl. Der analoge Teil wird von Benedikt Wolf entwickelt. Der PGA muss festehen, um diesen Bereich am FPGA implementieren zu können. Die Kosten für den PGA werden im Projektteil analog front end ver´rechnet.
+\subsection{automatische Messbereichsauswahl}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 8h \\
+	\hline
+	erledigt bis & 08.04.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & Wolf\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Das FPGA-Oszi soll von alleine den geeigneten Messbereich ermitteln können und diesen dann über die PGA's einstellen. Der analoge Teil wird von Benedikt Wolf entwickelt. Die Messbereiche müssen festehen, um diesen Bereich am FPGA implementieren zu können.
+\subsection{kommunikation mit dem PC - user interface}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 20h \\
+	\hline
+	erledigt bis & 29.04.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & Radike\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Die Messdaten sollen in geeigneten Paketen mit Zusatzinformationen, zB.: wie Messbereich, zum user interface gesendet werden. Die Kommunikation soll in beide Richtungen funktionieren. Extra Chip auf Piggyback vorraussichtlich nötig(Verrechnung bei user interface). Hier wird eng mit Markus Radike zusammengearbeitet.
+\subsection{digitale Signalverarbeitung}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	status & offen\\
+	\hline
+	beanspruchte Zeit & 24h \\
+	\hline
+	erledigt bis & 20.05.2021 \\
+	\hline
+\end{tabular}
+\begin{tabular}[h]{|l|l|} %l = left c = center r = right
+	\hline
+	Kosten & 0 €\\
+	\hline
+	Abhängigkeit & /\\
+	\hline
+	 &  \\
+	\hline
+\end{tabular}
+Es wird versucht den Frequenzgang des analogen Filters vor dem ADC zu kompensieren und optional zusätzlich digitale Filter einzubauen. In dieser Designunit werden zusätzlich die Daten zu Paketen zusammengefasst und für die Weiterleitung zum user interface bereit gestellt.
+\section{Zusammenfassung}
+\begin{tabular}{ll}
+	Insgesamt benötigte Zeit: &\textit{108 Stunden}\\
+	Vorraussichtliches Datum der Fertigstellung: &\textit{20.05.2021}\\
+	kalkulierte Gesamtkosten für diesen Projektteil: &\textit{100€}
+\end{tabular}
+\end{document}

@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Übersicht}{2}{section.1}%
+\contentsline {section}{\numberline {2}Arbeitspakete Lukas Sauer}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Projektvorbereitung}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spezifikation Grundfunktionen}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Quartus-Prime Projekterstellung}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Interner ADC}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}externer ADC}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}triggern}{3}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}PGA}{3}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}automatische Messbereichsauswahl}{3}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}kommunikation mit dem PC - user interface}{4}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}digitale Signalverarbeitung}{4}{subsection.2.10}%
+\contentsline {section}{\numberline {3}Zusammenfassung}{4}{section.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
