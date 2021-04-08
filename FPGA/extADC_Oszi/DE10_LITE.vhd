@@ -68,20 +68,6 @@ component DataUnit is
 	);
 end component DataUnit;
 
-component grafic_gen is
-	port( 
-		-- Control
-		CLK          : in std_logic;
-		RESET_n      : in std_logic;
-	
-		VGA_HS_out	: out std_logic;	--horizontal sync signal
-		VGA_VS_out	: out std_logic;	--vertical sync signal
-		VGA_R_out   : out std_logic_vector(3 downto 0);
-		VGA_G_out   : out std_logic_vector(3 downto 0);
-		VGA_B_out   : out std_logic_vector(3 downto 0)
-	);
-end component grafic_gen;
-
 component IO is
 	port(
 	-- Control
@@ -116,21 +102,6 @@ dataFrontEnd: component DataUnit
 		ADC_CH1_value_unsig => ADC_CH1_value_unsig,
 		ADC_CH1_value_i 	=> ADC_CH1_value_i
 	);
-	
-	
-grafic_generator: component grafic_gen
-	port map(
-		-- Control
-		CLK          	=> CLK,
-		RESET_n      	=> reset_n,
-		
-		VGA_HS_out		=> VGA_HS,
-		VGA_VS_out		=> VGA_VS,
-		VGA_R_out   	=> VGA_R,
-		VGA_G_out   	=> VGA_G,
-		VGA_B_out   	=> VGA_B
-
-	);
 		
 INandOUT: component IO
 	port map(
@@ -155,7 +126,6 @@ INandOUT: component IO
 	);
 --------------------------------------------------------------- after components
 
-  
 reset_n <= push_reset_n;
 
 end rtl;

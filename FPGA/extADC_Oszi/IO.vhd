@@ -52,6 +52,6 @@ HEX2(6 downto 0) <= not (disp_array_c(TO_INTEGER(ADC_CH1_value_unsig(11 downto 8
 push_reset_n_sig <= KEY(0) or KEY(1);
 push_reset_n <= push_reset_n_sig;
 --LEDR(0) <= push_reset_n_sig;
-LEDR <= std_logic_vector(ADC_CH1_value_unsig(11 downto 2));
+--LEDR <= std_logic_vector(ADC_CH1_value_unsig(11 downto 2));
 
 end rtl;

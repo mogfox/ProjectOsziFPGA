@@ -52,23 +52,22 @@ begin
 		func_counter <= 0;
 		state:= up;
 	elsif(CLK'event and CLK = '1') then
-		if(div_counter < clock_divider - 1) then
-			div_counter := div_counter + 1;
-		else
-			div_counter := 0;
-			case state is
-			when up =>
+		if(div_counter = clock_divider - 1) then
+			if(state = up) then
 				func_counter <= func_counter + 1;
 				if(func_counter = 4094) then
 					state := down;
 				end if;
-			when down =>
+			else
 				func_counter <= func_counter - 1;
 				if(func_counter = 1) then
-					state := down;
+					state := up;
 				end if;
-			end case;
-		end if;	
+			end if;
+			div_counter := 0;
+		else
+			div_counter := div_counter + 1;
+		end if;
 	end if;
 end process;
 	

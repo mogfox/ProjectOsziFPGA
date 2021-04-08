@@ -25,6 +25,11 @@ entity DataUnit is
 end DataUnit;
 
 architecture rtl of DataUnit is
+type trigger_types is (rising,falling,both);
+
+signal ADC_CH1_value_unsig_s : unsigned(11 downto 0);
+signal ADC_CH1_value_i_s : natural;
+signal trigger_mode : trigger_types;
 
 component ADCinterface is
 	port(
@@ -44,9 +49,25 @@ component selfStimulus is
 		CLK				:  in std_logic;	
 		GPIO    		: inout std_logic_vector(0 to 35)
 	);
-end component selfStimulus;
+end component selfStimulus; 
+
+component trigger is
+	port( 	
+		RESET_n			: in 	std_logic;	--master reset
+		CLK				: in 	std_logic;	
+		
+		ADC_CH1_value_i	: in 	natural;
+		trigger_value	: in	natural;
+		trigger_mode	: in 	trigger_types;
+		
+		trigger			: out	std_logic
+	);
+end component trigger;
 
 begin
+ADC_CH1_value_i_s <= TO_INTEGER(ADC_CH1_value_unsig_s);
+ADC_CH1_value_i <= ADC_CH1_value_i_s;
+ADC_CH1_value_unsig <= ADC_CH1_value_unsig_s;
 
 ADCs: component ADCinterface
 	port map(
@@ -56,7 +77,19 @@ ADCs: component ADCinterface
 		GPIO    			=> GPIO,	
 		
 		enable				=> '0',
-		ADC_CH1_value_unsig	=> ADC_CH1_value_unsig
+		ADC_CH1_value_unsig	=> ADC_CH1_value_unsig_s
+	);
+
+Trigger: component trigger
+	port map(
+		RESET_n			=> RESET_n,	
+		CLK				=> CLK,	
+		
+		ADC_CH1_value_i	=> ADC_CH1_value_i_s,
+		trigger_value	=> 2047,
+		trigger_mode	=> rising,
+		
+		trigger			=> 
 	);
 	
 selfTest: component selfStimulus
