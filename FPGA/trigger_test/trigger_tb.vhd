@@ -11,6 +11,9 @@ library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.ALL;
 
+library work;
+use work.Oszi_package.ALL;
+
 entity trigger_tb is
 end trigger_tb;
 
@@ -46,9 +49,9 @@ component trigger
 		
 		values_in_i			=> values_in_i_tb,
 		
-		trigger_threshold_i	=> 2047,
-		trigger_hyst_i		=> 50,
-		trigger_mode		=> rising,
+		trigger_threshold_i	=> 2100,
+		trigger_hyst_i		=> 20,
+		trigger_mode		=> any,
 		
 		trigger				=> trigger_tb
 	);
@@ -69,13 +72,20 @@ process
 begin
 	values_in_i_tb <= 0;
 	wait for 60 ns;
-	while values_in_i_tb < 4080 loop
-		values_in_i_tb <= values_in_i_tb + 10;
+	while values_in_i_tb < 4095 loop
+		values_in_i_tb <= values_in_i_tb + 1;
 		wait for 20 ns;
 	end loop;
-	wait for 60 ns;
-	while values_in_i_tb > 10 loop
-		values_in_i_tb <= values_in_i_tb - 10;
+	while values_in_i_tb > 0 loop
+		values_in_i_tb <= values_in_i_tb - 1;
+		wait for 20 ns;
+	end loop;
+	while values_in_i_tb < 4095 loop
+		values_in_i_tb <= values_in_i_tb + 1;
+		wait for 20 ns;
+	end loop;
+	while values_in_i_tb > 0 loop
+		values_in_i_tb <= values_in_i_tb - 1;
 		wait for 20 ns;
 	end loop;
 	wait;

@@ -1,32 +1,30 @@
-\contentsline {section}{\numberline {1}Vorwort}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Projektübersicht}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Projektgruppe}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Projektbetreuer}{5}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Entwicklung}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Top-Level-Design-Unit Grundstruktur}{5}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Projektteilbereich Übersicht}{5}{subsubsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}Verwendung der internen ADCs}{5}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Projektteilbereich Übersicht}{5}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}ADC Hardware}{5}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}VHDL Implementierung}{6}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}ADC-PCB "Prototype 1"}{7}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Projektteilbereich Übersicht}{7}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Schaltplan}{8}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}PCB}{8}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}externer ADC}{12}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Projektteilbereich Übersicht}{13}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}LTC1420C technische Merkmale}{13}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}VHDL Implementierung}{13}{subsubsection.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.4.4}erste Testversuche}{13}{subsubsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.5}Trigger}{13}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Projektteilbereich Übersicht}{13}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Funktion}{13}{subsubsection.2.5.2}%
-\contentsline {paragraph}{Modus: Rising Edge}{13}{section*.2}%
-\contentsline {paragraph}{Modus: Falling Edge}{13}{section*.3}%
-\contentsline {paragraph}{Modus: Any Edge}{14}{section*.4}%
-\contentsline {paragraph}{Schwellwert, Hysterese und Modi}{15}{section*.5}%
-\contentsline {subsubsection}{\numberline {2.5.3}VHDL-Design-Unit}{16}{subsubsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.4}Design-Unit Test}{16}{subsubsection.2.5.4}%
+\contentsline {section}{\numberline {1}Vorwort}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Projektübersicht}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Projektgruppe}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Projektbetreuer}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Entwicklung}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Top-Level-Design-Unit Grundstruktur}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Projektteilbereich Übersicht}{4}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Verwendung der internen ADCs}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Projektteilbereich Übersicht}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}ADC Hardware}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}VHDL Implementierung}{5}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Der ADC - LTC1420C}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}ADC-PCB "Prototype 1"}{6}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Projektteilbereich Übersicht}{7}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Schaltplan}{7}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}PCB}{7}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Trigger}{11}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Projektteilbereich Übersicht}{12}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Funktion}{12}{subsubsection.2.5.2}%
+\contentsline {paragraph}{Modus: Rising Edge}{12}{section*.2}%
+\contentsline {paragraph}{Modus: Falling Edge}{12}{section*.3}%
+\contentsline {paragraph}{Modus: Any Edge}{13}{section*.4}%
+\contentsline {paragraph}{Schwellwert, Hysterese und Modi}{13}{section*.5}%
+\contentsline {subsubsection}{\numberline {2.5.3}VHDL-Design-Unit}{14}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Design-Unit Test}{14}{subsubsection.2.5.4}%
+\contentsline {paragraph}{Generelles}{14}{section*.6}%
+\contentsline {paragraph}{Simulation}{15}{section*.7}%
 \contentsline {subsection}{\numberline {2.6}Kommunikationsprotokoll}{16}{subsection.2.6}%
 \contentsline {subsubsection}{\numberline {2.6.1}Projektteilbereich Übersicht}{16}{subsubsection.2.6.1}%
 \contentsline {subsubsection}{\numberline {2.6.2}Paketspezifikation FPGA zu UserInterface}{16}{subsubsection.2.6.2}%
@@ -34,11 +32,11 @@
 \contentsline {subsubsection}{\numberline {2.6.4}Messbereichseinstellung}{16}{subsubsection.2.6.4}%
 \contentsline {subsubsection}{\numberline {2.6.5}Zeitbereichseinstellung}{17}{subsubsection.2.6.5}%
 \contentsline {subsubsection}{\numberline {2.6.6}Messdaten}{17}{subsubsection.2.6.6}%
-\contentsline {subsubsection}{\numberline {2.6.7}Checksum}{17}{subsubsection.2.6.7}%
+\contentsline {subsubsection}{\numberline {2.6.7}Checksum}{18}{subsubsection.2.6.7}%
 \contentsline {subsubsection}{\numberline {2.6.8}frei / not used}{18}{subsubsection.2.6.8}%
 \contentsline {section}{\numberline {3}verwendete Messgeräte \& Entwicklungsboards}{18}{section.3}%
 \contentsline {subsection}{\numberline {3.1}DE10-Lite Board}{18}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Oszilloskop 1}{18}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Quellen und Hilfsmittel}{18}{section.4}%
-\contentsline {paragraph}{Verwendung des DE10-Lite-Boards \& VHDL-Programmierung:}{18}{section*.6}%
-\contentsline {paragraph}{Datenblätter:}{18}{section*.7}%
+\contentsline {paragraph}{Verwendung des DE10-Lite-Boards \& VHDL-Programmierung:}{18}{section*.8}%
+\contentsline {paragraph}{Datenblätter:}{19}{section*.9}%

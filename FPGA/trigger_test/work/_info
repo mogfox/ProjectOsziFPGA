@@ -1,0 +1,124 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/lukas/Dropbox/TGM/TGM_4/DIC_Graebner/Cordic/FPGA/Simulation
+Poszi_package
+Z0 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 59
+w1618496266
+Z3 dD:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test
+8D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/package_Oszi.vhd
+FD:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/package_Oszi.vhd
+l0
+L14 1
+VXgohQ[NQ5=dJ0O[f[_nW>1
+!s100 <7?L@^4Jik<IkHiV`leW43
+Z4 OV;C;2020.1;71
+32
+Z5 !s110 1618512953
+!i10b 1
+Z6 !s108 1618512953.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/package_Oszi.vhd|
+!s107 D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/package_Oszi.vhd|
+!i113 1
+Z7 o-work work -2002 -explicit
+Z8 tExplicit 1 CvgOpt 0
+Etrigger
+Z9 w1618497667
+Z10 DPx4 work 12 oszi_package 0 22 XgohQ[NQ5=dJ0O[f[_nW>1
+R0
+R1
+R2
+!i122 57
+R3
+Z11 8D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger.vhd
+Z12 FD:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger.vhd
+l0
+Z13 L17 1
+Vk87mA7ob2HRL7Uah][[>R3
+!s100 bIB1b:QMlfefLIQdziKll0
+R4
+32
+R5
+!i10b 1
+Z14 !s108 1618512952.000000
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger.vhd|
+Z16 !s107 D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger.vhd|
+!i113 1
+R7
+R8
+Artl
+R10
+R0
+R1
+R2
+DEx4 work 7 trigger 0 22 k87mA7ob2HRL7Uah][[>R3
+!i122 57
+l39
+L32 97
+VaaQX[gEgClKhTIj<PV6:S3
+!s100 cF;GV^`z;WdAF05M[_^==1
+R4
+32
+R5
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R7
+R8
+Etrigger_tb
+Z17 w1618499457
+R10
+R0
+R1
+R2
+!i122 58
+R3
+Z18 8D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger_tb.vhd
+Z19 FD:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger_tb.vhd
+l0
+R13
+V]RDSMNJN^54<AhF:WFee_2
+!s100 zejILo00`d<54TkTS>HFD0
+R4
+32
+R5
+!i10b 1
+R6
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger_tb.vhd|
+Z21 !s107 D:/Semesterprojekt/ProjectOsziFPGA/FPGA/trigger_test/trigger_tb.vhd|
+!i113 1
+R7
+R8
+Abehaviour
+R10
+R0
+R1
+R2
+DEx4 work 10 trigger_tb 0 22 ]RDSMNJN^54<AhF:WFee_2
+!i122 58
+l42
+L20 75
+VTHUMFe>0g^^>MjmBCh9Y[2
+!s100 8<2Y4OJLjb=F_`PC[1n<i2
+R4
+32
+R5
+!i10b 1
+R6
+R20
+R21
+!i113 1
+R7
+R8

@@ -32,10 +32,6 @@ end trigger;
 architecture rtl of trigger is
 signal trigger_falling : std_logic;
 signal trigger_rising  : std_logic;
-
-type trigger_waiting_types is (waiting_for_arming, waiting_for_trigger);
-signal teststate_rising : trigger_waiting_types;
-
 begin
 
 TriggerMUX:
@@ -60,6 +56,7 @@ process(CLK)
 variable arming_level_high	: natural;	--hysterese top
 variable arming_level_low 	: natural;	--hsyterese bottom
 
+type trigger_waiting_types is (waiting_for_arming, waiting_for_trigger);
 variable trigger_state_rising 		: trigger_waiting_types;
 variable trigger_state_falling 		: trigger_waiting_types;
 
@@ -75,12 +72,10 @@ begin
 		trigger_falling <= '0';
 		
 	elsif(CLK'event and CLK = '1') then
-		teststate_rising <= trigger_state_rising;
 		if((old_trigger_threshold_i /= trigger_threshold_i) or (old_trigger_mode /= trigger_mode)) then		--wenn sich etwas ändert
 			old_trigger_threshold_i := trigger_threshold_i;
 			old_trigger_mode := trigger_mode;
-			trigger_state_rising 	:= waiting_for_arming;
-			trigger_state_falling 	:= waiting_for_arming;
+			trigger_state <= waiting_for_arming;
 			trigger_rising <= '0';
 			trigger_falling <= '0';
 		else 																								--sonst
@@ -91,21 +86,21 @@ begin
 			end if;
 			
 			if(trigger_threshold_i - trigger_hyst_i >= 0) then				--setting arming_level_low
-				arming_level_low := trigger_threshold_i - trigger_hyst_i;
+				arming_level_high := trigger_threshold_i - trigger_hyst_i;
 			else
-				arming_level_low := 0;
+				arming_level_high := 0;
 			end if;
 			
 			case trigger_state_rising is			--rising edge trigger
 				when waiting_for_arming =>
 					trigger_rising <= '0';
 					if (values_in_i <= arming_level_low) then
-						trigger_state_rising := waiting_for_trigger;
+						trigger_state := waiting_for_trigger;
 					end if;
 				when waiting_for_trigger => 
 					if (values_in_i > trigger_threshold_i)then
 						trigger_rising <= '1';
-						trigger_state_rising := waiting_for_arming;
+						trigger_state := waiting_for_arming;
 					end if;
 			end case;
 			
@@ -113,12 +108,12 @@ begin
 				when waiting_for_arming =>
 					trigger_falling <= '0';
 					if (values_in_i >= arming_level_high) then
-						trigger_state_falling := waiting_for_trigger;
+						trigger_state := waiting_for_trigger;
 					end if;
 				when waiting_for_trigger => 
 					if (values_in_i < trigger_threshold_i)then
 						trigger_falling <= '1';
-						trigger_state_falling := waiting_for_arming;
+						trigger_state := waiting_for_arming;
 					end if;
 			end case;
 		end if;
