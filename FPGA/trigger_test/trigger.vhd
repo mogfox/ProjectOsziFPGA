@@ -1,0 +1,120 @@
+--------------------------------------------------------
+-- Project: FPGA-Oszi
+-- File: trigger.vhd
+-- Author: Lukas J. Sauer
+-- Date: 23.03.21
+--------------------------------------------------------
+-- trigger unit
+--------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+
+entity trigger is
+	port( 	
+		RESET_n				: in 	std_logic;	--master reset
+		CLK					: in 	std_logic;	
+		
+		values_in_i			: in 	natural;
+		
+		trigger_threshold_i	: in	natural;
+		trigger_hyst_i		: in	natural;
+		trigger_mode		: in 	trigger_types;	--rising,falling,any
+		
+		trigger				: out	std_logic
+	);
+end trigger;
+
+architecture rtl of trigger is
+signal trigger_falling : std_logic;
+signal trigger_rising  : std_logic;
+begin
+
+TriggerMUX:
+process(RESET_n, trigger_falling, trigger_rising, trigger_mode)
+begin
+	if(RESET_n = '0') then
+		trigger <= '0';
+	else
+		case trigger_mode is
+			when rising =>
+				trigger <= trigger_rising;
+			when falling =>
+				trigger <= trigger_falling;
+			when any =>
+				trigger <= (trigger_falling or trigger_rising);
+		end case;
+	end if;
+end process;
+
+TriggerEdgeDetection:
+process(CLK)	
+variable arming_level_high	: natural;	--hysterese top
+variable arming_level_low 	: natural;	--hsyterese bottom
+
+type trigger_state_types is (waiting_for_arming, waiting_for_trigger);
+variable trigger_state_rising 		: trigger_waiting_types;
+variable trigger_state_falling 		: trigger_waiting_types;
+
+variable old_trigger_threshold_i : natural;
+variable old_trigger_mode 		 : trigger_types;
+
+begin
+	if(RESET_n = '0') then
+		trigger_state_rising <= waiting_for_arming;
+		old_trigger_threshold_i := trigger_threshold_i;
+		old_trigger_mode := trigger_mode;
+		trigger_rising <= '0';
+		trigger_falling <= '0';
+		
+	elsif(CLK'event and CLK = '1') then
+		if((old_trigger_threshold_i /= trigger_threshold_i) or (old_trigger_mode /= trigger_mode)) then		--wenn sich etwas ändert
+			old_trigger_threshold_i := trigger_threshold_i;
+			old_trigger_mode := trigger_mode;
+			trigger_state <= waiting_for_arming;
+			trigger_rising <= '0';
+			trigger_falling <= '0';
+		else 																								--sonst
+			if(trigger_threshold_i + trigger_hyst_i < 4096) then			--setting arming_level_high
+				arming_level_high := trigger_threshold_i + trigger_hyst_i;
+			else
+				arming_level_high := 4095;
+			end if;
+			
+			if(trigger_threshold_i - trigger_hyst_i >= 0) then				--setting arming_level_low
+				arming_level_high := trigger_threshold_i - trigger_hyst_i;
+			else
+				arming_level_high := 0;
+			end if;
+			
+			case trigger_state_rising is			--rising edge trigger
+				when waiting_for_arming =>
+					trigger_rising <= '0';
+					if (values_in_i <= arming_level_low) then
+						trigger_state := waiting_for_trigger;
+					end if;
+				when waiting_for_trigger => 
+					if (values_in_i > trigger_threshold_i)then
+						trigger_rising <= '1';
+						trigger_state := waiting_for_arming;
+					end if;
+			end case;
+			
+			case trigger_state_falling is			--falling edge trigger
+				when waiting_for_arming =>
+					trigger_falling <= '0';
+					if (values_in_i >= arming_level_high) then
+						trigger_state := waiting_for_trigger;
+					end if;
+				when waiting_for_trigger => 
+					if (values_in_i < trigger_threshold_i)then
+						trigger_falling <= '1';
+						trigger_state := waiting_for_arming;
+					end if;
+			end case;
+		end if;
+	end if;
+end process;
+
+end rtl;
