@@ -1,3 +1,29 @@
 \subsection{Der ADC - LTC1420C}\label{extADC}
  Die Wahl des externen ADCs ist auf den LTC1420C gefallen. Dieser besitzt eine Auflösung von 12-Bit bei einer Abtastrate von 10MSa/s.  Ausgelesen werden die Messwerte vom FPGA parallel über 12 digitale Ausgänge. Der ADC benötigt keine Referezspannung, da diese intern erzeugt wird, jedoch eine Clock von 10Mhz muss bereit gestellt werden.
-Das Datenblatt ist in den Quellen verlinkt, siehe \ref{LTC1420C_dat}
+Das Datenblatt ist in den Quellen verlinkt, siehe: \ref{LTC1420C_dat}
+\subsubsection{VHDL "ADC Interfcae"}
+Für die Kommunikation mit dem externen ADC wurde eine eigene VHDL-Design-Unit \textit{ADCinterface} geschreiben.
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=8cm]{SAUER/Grafiken/ADC_Int.png}
+		\caption{Entity ADC Interface}
+	\end{center}
+\end{figure}
+\begin{center}
+	\begin{tabular}[h]{|l|l|l|}
+		\hline
+		Port & Typ & I/0\\
+		\hline\hline
+		RESET\_n & std\_logic & in\\
+		\hline
+		CLK & std\_logic & in\\
+		\hline
+		GPIO & std\_logic\_vector(0 to 35) & inout\\
+		\hline
+		enable & std\_logic & in\\
+		\hline
+		ADC\_CH1\_value\_unsig & unsigned(11 downto 0) & out\\
+		\hline
+	\end{tabular}
+\end{center}
+Die Komponente übernimmt die vom ADC üder die GPIO seriell geschickten Daten, schreibt sie in einen usigned Vector und leitet diesen über die Entity weiter. Es wird ausschließlich das MSB invertiert um im natürlichen Zahlenbreich zu bleiben. Das 10 MHz-Taktsignal wird intern über einen Clockteiler "ALTPLL", aus dem QuartusPrime  IP-Catalog, geteilt.

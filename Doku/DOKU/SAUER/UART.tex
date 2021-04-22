@@ -1,0 +1,14 @@
+\subsection{UART - Verbindung FPGA \& UserInterface}
+\subsubsection{Projektteilbereich Übersicht}
+In diesem Abschnitt wird die Verbindung zwischen FPGA und UserInterface dokumentiert. Das Protokoll wird in einem eigenen Punkt erläutert  (siehe: \ref{Protokoll}))
+\subsubsection{erste Verbindung}
+Die erste Verbindung wurde nicht über den am Board integrierten Kommunikations-Chip hergestellt, sondern über einen handelsüblichen RS232-Adapter "AU002E". Dabei wurde die Hardware und die UART-Design-Unit getestet und erprobt. 
+\paragraph{Pegelanpassung}
+Der verwendete Adapter ist für RS232 ausgelegt, was der Vorläufer von UART ist, und hat daher ungünstige Eigenschaften. Die Pegel sind folgend definiert:
+\begin{itemize}
+	\item
+	logisch '1': zwischen -15V und -3V
+	\item
+	logisch '0': zwischen 3V und 15V
+\end{itemize}
+Überraschenderweise funktionierte das Senden der Daten in die Richtung vom FPGA zum Adapter, obwohl die Pegel '1' = 0V und '0' = 3.3V nicht den Spezifikationen entsprachen. Der Chip kann die digitalen Ausgängen ausschließlich auf diese zwei Spannungen schalten.\\Hingegen die andere Richtung stellte ein Problem dar: die Hardware ist nur auf blabla Pegel ausgelegt

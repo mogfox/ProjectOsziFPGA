@@ -35,7 +35,7 @@ Eine Hysterese im Bereich von 20 bis 50 digits wird empfohlen.
 \subsubsection{VHDL-Design-Unit}
 Die Komponente ist sehr einfach gehalten und auch zu bedienen bzw. zu implementieren.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\begin{center}
 		\includegraphics[width=8cm]{SAUER/Grafiken/Trigger/Block.png}
 		\caption{Entity Trigger}
@@ -62,7 +62,7 @@ Die Komponente ist sehr einfach gehalten und auch zu bedienen bzw. zu implementi
 	\hline
 \end{tabular}
 \end{center}
-\subsubsection{Design-Unit Test}
+\subsubsection{Design-Unit Simulation}
 \paragraph{Generelles}
 Um die Komponente \textit{Trigger} zu testen wurde eine Testbench geschrieben und mithilfe dieser eine Simulation in ModelSim durchgeführt. Neben der Clock, dem Reset und den Konfigurationseinstellungen wurde als zu triggernder Datenstream ein Dreieckssignal angelegt.
 \\Die Design-Unit wurde gut durchgeprüft. Viele Testversuche mit möglichst verschiedenen und auch exotischen Konfigurationseinstellungen ergaben eine fehlerlose Funktionalität. Das Synthetisieren der Komponete stellt ebenfalls kein Problem dar.
@@ -76,3 +76,4 @@ Im abgebildeten Zeitdiagramm (Figure \ref{TriggerSim}) ist eine der Simulationen
 		\label{TriggerSim}
 	\end{center}
 \end{figure}
+\subsubsection{Trigger Praxistest}

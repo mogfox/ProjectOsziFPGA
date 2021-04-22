@@ -1,0 +1,6 @@
+
+State Machine - |DE10_Lite|DataUnit:dataFrontEnd|trigger_mode
+Name trigger_mode.any trigger_mode.falling trigger_mode.rising 
+trigger_mode.rising 0 0 0 
+trigger_mode.falling 0 1 1 
+trigger_mode.any 1 0 1 

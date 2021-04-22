@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  15 APR 2021 21:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.5)  22 APR 2021 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,24 +299,24 @@ Overfull \hbox (10.7631pt too wide) in paragraph at lines 14--29
 [1
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Dokumentation_FPGA_Oszi.toc)
+(./Dokumentation_FPGA_Oszi.toc [2])
 \tf@toc=\write4
 \openout4 = `Dokumentation_FPGA_Oszi.toc'.
 
- [2] (./Vorwort/Vorwort.tex
+ [3] (./Vorwort/Vorwort.tex
 Overfull \hbox (2.3112pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/12 gramm soll eben-falls der Spannungs- und Zeit-bere-ich der Aus-
 gabe einzustellen
  []
 
-<Vorwort/FotoSauer.jpg, id=188, 313.4109pt x 443.4969pt>
+<Vorwort/FotoSauer.jpg, id=217, 313.4109pt x 443.4969pt>
 File: Vorwort/FotoSauer.jpg Graphic file (type jpg)
 <use Vorwort/FotoSauer.jpg>
 Package pdftex.def Info: Vorwort/FotoSauer.jpg  used on input line 14.
 (pdftex.def)             Requested size: 113.81102pt x 161.04604pt.
-) [3 <./Vorwort/FotoSauer.jpg>] (./SAUER/DOKU_SAUER.tex
+) [4 <./Vorwort/FotoSauer.jpg>] (./SAUER/DOKU_SAUER.tex
 (./SAUER/TopLevelDesignUnit.tex) (./SAUER/intADC.tex
-<SAUER/Grafiken/ADC_Arduino_Pins.PNG, id=194, 958.17975pt x 431.211pt>
+<SAUER/Grafiken/ADC_Arduino_Pins.PNG, id=223, 958.17975pt x 431.211pt>
 File: SAUER/Grafiken/ADC_Arduino_Pins.PNG Graphic file (type png)
 <use SAUER/Grafiken/ADC_Arduino_Pins.PNG>
 Package pdftex.def Info: SAUER/Grafiken/ADC_Arduino_Pins.PNG  used on input lin
@@ -327,7 +327,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 9--10
  [] 
  []
 
-<SAUER/Grafiken/ADC_Front-End.PNG, id=198, 800.9925pt x 320.397pt>
+<SAUER/Grafiken/ADC_Front-End.PNG, id=227, 800.9925pt x 320.397pt>
 File: SAUER/Grafiken/ADC_Front-End.PNG Graphic file (type png)
 <use SAUER/Grafiken/ADC_Front-End.PNG>
 Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End.PNG  used on input line 1
@@ -338,7 +338,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 17--18
  [] 
  []
 
-<SAUER/Grafiken/ADC_Front-End_Bode.PNG, id=199, 455.45157pt x 108.405pt>
+<SAUER/Grafiken/ADC_Front-End_Bode.PNG, id=228, 455.45157pt x 108.405pt>
 File: SAUER/Grafiken/ADC_Front-End_Bode.PNG Graphic file (type png)
 <use SAUER/Grafiken/ADC_Front-End_Bode.PNG>
 Package pdftex.def Info: SAUER/Grafiken/ADC_Front-End_Bode.PNG  used on input l
@@ -364,36 +364,45 @@ alt einen Vorverst^^?arker,
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]
+[5]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./SAUER/extADC.tex) (./SAUER/ADC-PCB.tex [5pdfTeX warning (ext4): destinatio
-n with the same identifier (name{figure.1}) has been already used, duplicate ig
-nored
+) (./SAUER/extADC.tex [6pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1 \subsection
-               {ADC-PCB "Prototype 1"} \label{Prototype1} <./SAUER/Grafiken/ADC
-_Arduino_Pins.PNG>] [6pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.4 
-    pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.4 
-     <./SAUER/Grafiken/ADC_Front-End.PNG> <./SAUER/Grafiken/ADC_Front-End_Bode.
-PNG>]
+l.4 \subsubsection
+                  {VHDL "ADC Interfcae"} <./SAUER/Grafiken/ADC_Arduino_Pins.PNG
+>]
+<SAUER/Grafiken/ADC_Int.png, id=248, 566.115pt x 189.70876pt>
+File: SAUER/Grafiken/ADC_Int.png Graphic file (type png)
+<use SAUER/Grafiken/ADC_Int.png>
+Package pdftex.def Info: SAUER/Grafiken/ADC_Int.png  used on input line 8.
+(pdftex.def)             Requested size: 227.62204pt x 76.27583pt.
 
-LaTeX Warning: Reference `LTC1420C' on page 7 undefined on input line 6.
 
-<SAUER/Grafiken/Prot1/Prot1_Schalt.png, id=228, 670.30424pt x 476.37975pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.28 \end{center}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.28 \end{center}
+                  <./SAUER/Grafiken/ADC_Front-End.PNG> <./SAUER/Grafiken/ADC_Fr
+ont-End_Bode.PNG>]) (./SAUER/ADC-PCB.tex
+
+LaTeX Warning: Reference `LTC1420C' on page 8 undefined on input line 6.
+
+<SAUER/Grafiken/Prot1/Prot1_Schalt.png, id=259, 670.30424pt x 476.37975pt>
 File: SAUER/Grafiken/Prot1/Prot1_Schalt.png Graphic file (type png)
 <use SAUER/Grafiken/Prot1/Prot1_Schalt.png>
 Package pdftex.def Info: SAUER/Grafiken/Prot1/Prot1_Schalt.png  used on input l
@@ -407,7 +416,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 9--10
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<SAUER/Grafiken/Prot1/3DF.png, id=230, 723.9045pt x 389.65575pt>
+<SAUER/Grafiken/Prot1/3DF.png, id=261, 723.9045pt x 389.65575pt>
 File: SAUER/Grafiken/Prot1/3DF.png Graphic file (type png)
 <use SAUER/Grafiken/Prot1/3DF.png>
 Package pdftex.def Info: SAUER/Grafiken/Prot1/3DF.png  used on input line 19.
@@ -417,103 +426,51 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 19--20
  [] 
  []
 
-<SAUER/Grafiken/Prot1/3DB.png, id=231, 688.974pt x 407.72325pt>
-File: SAUER/Grafiken/Prot1/3DB.png Graphic file (type png)
-<use SAUER/Grafiken/Prot1/3DB.png>
-Package pdftex.def Info: SAUER/Grafiken/Prot1/3DB.png  used on input line 25.
-(pdftex.def)             Requested size: 426.79134pt x 252.56804pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 25--26
- [] 
- []
-
-[7]
-Overfull \vbox (67.72742pt too high) has occurred while \output is active []
-
-
 [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.28 \end{figure}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.5}) has been already used, duplicate ignored
+l.22 \end{figure}
+                  <./SAUER/Grafiken/ADC_Int.png>] [9pdfTeX warning (ext4): dest
+ination with the same identifier (name{figure.5}) has been already used, duplic
+ate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.28 \end{figure}
-                  <./SAUER/Grafiken/Prot1/Prot1_Schalt.PNG> <./SAUER/Grafiken/P
-rot1/3DF.PNG>]
-<SAUER/Grafiken/Prot1/Foto.jpeg, id=246, 589.4522pt x 336.50719pt>
-File: SAUER/Grafiken/Prot1/Foto.jpeg Graphic file (type jpg)
-<use SAUER/Grafiken/Prot1/Foto.jpeg>
-Package pdftex.def Info: SAUER/Grafiken/Prot1/Foto.jpeg  used on input line 31.
-
-(pdftex.def)             Requested size: 426.79134pt x 243.6508pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 31--32
- [] 
- []
-
-<SAUER/Grafiken/Prot1/FCU.png, id=247, 1023.22275pt x 447.47176pt>
-File: SAUER/Grafiken/Prot1/FCU.png Graphic file (type png)
-<use SAUER/Grafiken/Prot1/FCU.png>
-Package pdftex.def Info: SAUER/Grafiken/Prot1/FCU.png  used on input line 37.
-(pdftex.def)             Requested size: 426.79134pt x 186.63956pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 37--38
- [] 
- []
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.40 \end{figure}
-                  <./SAUER/Grafiken/Prot1/3DB.PNG>]
-<SAUER/Grafiken/Prot1/FFAB.png, id=254, 733.5405pt x 326.4195pt>
+l.23 
+      <./SAUER/Grafiken/Prot1/Prot1_Schalt.PNG>]
+<SAUER/Grafiken/Prot1/FFAB.png, id=275, 733.5405pt x 326.4195pt>
 File: SAUER/Grafiken/Prot1/FFAB.png Graphic file (type png)
 <use SAUER/Grafiken/Prot1/FFAB.png>
-Package pdftex.def Info: SAUER/Grafiken/Prot1/FFAB.png  used on input line 43.
+Package pdftex.def Info: SAUER/Grafiken/Prot1/FFAB.png  used on input line 26.
 (pdftex.def)             Requested size: 426.79134pt x 189.91614pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 43--44
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 26--27
  [] 
  []
 
-<SAUER/Grafiken/Prot1/BFAB.png, id=255, 652.839pt x 317.38576pt>
+<SAUER/Grafiken/Prot1/BFAB.png, id=276, 652.839pt x 317.38576pt>
 File: SAUER/Grafiken/Prot1/BFAB.png Graphic file (type png)
 <use SAUER/Grafiken/Prot1/BFAB.png>
-Package pdftex.def Info: SAUER/Grafiken/Prot1/BFAB.png  used on input line 49.
+Package pdftex.def Info: SAUER/Grafiken/Prot1/BFAB.png  used on input line 32.
 (pdftex.def)             Requested size: 426.79134pt x 207.49449pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 49--50
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 32--33
  [] 
  []
 
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
+) (./SAUER/trigger.tex [10pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.53 \end{figure}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.8}) has been already used, duplicate ignored
+l.1 \subsection
+               {Trigger}\label{trigger}pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.53 \end{figure}
-                  <./SAUER/Grafiken/Prot1/Foto.jpeg> <./SAUER/Grafiken/Prot1/FC
-U.PNG>]) (./SAUER/trigger.tex [11pdfTeX warning (ext4): destination with the sa
-me identifier (name{figure.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.4 \subsubsection
-                  {Funktion}pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.4 \subsubsection
-                  {Funktion} <./SAUER/Grafiken/Prot1/FFAB.PNG> <./SAUER/Grafike
-n/Prot1/BFAB.PNG>]
-<SAUER/Grafiken/Trigger/TriggerEdgeRising.jpg, id=271, 255.20343pt x 88.83188pt
+l.1 \subsection
+               {Trigger}\label{trigger} <./SAUER/Grafiken/Prot1/3DF.PNG> <./SAU
+ER/Grafiken/Prot1/FFAB.PNG>]
+<SAUER/Grafiken/Trigger/TriggerEdgeRising.jpg, id=286, 255.20343pt x 88.83188pt
 >
 File: SAUER/Grafiken/Trigger/TriggerEdgeRising.jpg Graphic file (type jpg)
 <use SAUER/Grafiken/Trigger/TriggerEdgeRising.jpg>
@@ -531,7 +488,10 @@ Overfull \hbox (14.67477pt too wide) in paragraph at lines 6--14
 en we-gen h^^?oherfrequenten
  []
 
-<SAUER/Grafiken/Trigger/TriggerEdgeFalling.jpg, id=273, 295.85532pt x 97.86563p
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<SAUER/Grafiken/Trigger/TriggerEdgeFalling.jpg, id=288, 295.85532pt x 97.86563p
 t>
 File: SAUER/Grafiken/Trigger/TriggerEdgeFalling.jpg Graphic file (type jpg)
 <use SAUER/Grafiken/Trigger/TriggerEdgeFalling.jpg>
@@ -549,14 +509,13 @@ Overfull \hbox (19.57056pt too wide) in paragraph at lines 15--23
 sen we-gen h^^?oherfrequenten
  []
 
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.23 \paragraph
-               {Modus: Any Edge} <./SAUER/Grafiken/Trigger/TriggerEdgeRising.jp
-g>]
-<SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg, id=282, 217.5628pt x 134.75343pt>
+               {Modus: Any Edge} <./SAUER/Grafiken/Prot1/BFAB.PNG>]
+<SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg, id=297, 217.5628pt x 134.75343pt>
 File: SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg Graphic file (type jpg)
 <use SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg>
 Package pdftex.def Info: SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg  used on inp
@@ -568,37 +527,37 @@ Overfull \hbox (14.67477pt too wide) in paragraph at lines 24--32
 en we-gen h^^?oherfrequenten
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.32 \paragraph
+               {Schwellwert, Hysterese und Modi}pdfTeX warning (ext4): destinat
+ion with the same identifier (name{figure.10}) has been already used, duplicate
+ ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.32 \paragraph
+               {Schwellwert, Hysterese und Modi} <./SAUER/Grafiken/Trigger/Trig
+gerEdgeRising.jpg> <./SAUER/Grafiken/Trigger/TriggerEdgeFalling.jpg>]
 Overfull \hbox (25.02328pt too wide) in paragraph at lines 33--35
 \OT1/cmr/m/n/12 namisch so, dass diese den Wer-te-bere-ich nicht ver-lassen kan
 n.($\OML/cmm/m/it/12 arming[]level[]low \OMS/cmsy/m/n/12 ^^U
  []
 
-<SAUER/Grafiken/Trigger/Block.png, id=284, 427.5975pt x 261.97874pt>
+<SAUER/Grafiken/Trigger/Block.png, id=305, 427.5975pt x 261.97874pt>
 File: SAUER/Grafiken/Trigger/Block.png Graphic file (type png)
 <use SAUER/Grafiken/Trigger/Block.png>
 Package pdftex.def Info: SAUER/Grafiken/Trigger/Block.png  used on input line 4
 0.
 (pdftex.def)             Requested size: 227.62204pt x 139.45569pt.
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.43 \end{figure}
-                  <./SAUER/Grafiken/Trigger/TriggerEdgeFalling.jpg>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.69 
-      <./SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg>]
-<SAUER/Grafiken/Trigger/Simulation.jpg, id=300, 785.334pt x 212.9556pt>
+                  <./SAUER/Grafiken/Trigger/TriggerEdgeAny.jpg>]
+<SAUER/Grafiken/Trigger/Simulation.jpg, id=316, 785.334pt x 212.9556pt>
 File: SAUER/Grafiken/Trigger/Simulation.jpg Graphic file (type jpg)
 <use SAUER/Grafiken/Trigger/Simulation.jpg>
 Package pdftex.def Info: SAUER/Grafiken/Trigger/Simulation.jpg  used on input l
@@ -609,20 +568,14 @@ Overfull \hbox (65.24408pt too wide) in paragraph at lines 74--75
  [] 
  []
 
-) (./SAUER/Protokoll.tex [15pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.14}) has been already used, duplicate ignored
+) (./SAUER/Protokoll.tex [14pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.2 \subsubsection{Projektteilbereich Übersicht}
-                                                 pdfTeX warning (ext4): destina
-tion with the same identifier (name{figure.15}) has been already used, duplicat
-e ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.2 \subsubsection{Projektteilbereich Übersicht}
-                                                  <./SAUER/Grafiken/Trigger/Blo
-ck.png> <./SAUER/Grafiken/Trigger/Simulation.jpg>]
-<SAUER/Grafiken/Kommunikationsprotokoll/Datenstreampaket.png, id=310, 704.6325p
+l.1 \subsection
+               {Kommunikationsprotokoll}\label{Protokoll} <./SAUER/Grafiken/Tri
+gger/Block.png>]
+<SAUER/Grafiken/Kommunikationsprotokoll/Datenstreampaket.png, id=326, 704.6325p
 t x 187.70125pt>
 File: SAUER/Grafiken/Kommunikationsprotokoll/Datenstreampaket.png Graphic file 
 (type png)
@@ -635,7 +588,10 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 7--8
  [] 
  []
 
-<SAUER/Grafiken/Kommunikationsprotokoll/Controllerpaket.png, id=311, 798.985pt 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<SAUER/Grafiken/Kommunikationsprotokoll/Controllerpaket.png, id=327, 798.985pt 
 x 187.70125pt>
 File: SAUER/Grafiken/Kommunikationsprotokoll/Controllerpaket.png Graphic file (
 type png)
@@ -656,36 +612,72 @@ Overfull \hbox (43.36198pt too wide) in paragraph at lines 21--31
 \OT1/cmr/m/n/12 die durch-num-merierten Mess-bere-iche zu finden. [] 
  []
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.31 \subsubsection
+                   {Zeitbereichseinstellung}\label{Zeitbereichseinstellung} <./
+SAUER/Grafiken/Trigger/Simulation.jpg>] [16pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.14}) has been already used, duplicate igno
+red
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.60 \subsubsection
+                   {Messdaten}pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.60 \subsubsection
                    {Messdaten} <./SAUER/Grafiken/Kommunikationsprotokoll/Datens
-treampaket.png>] [17pdfTeX warning (ext4): destination with the same identifier
- (name{figure.17}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.62 \subsubsection
-                   {Checksum} <./SAUER/Grafiken/Kommunikationsprotokoll/Control
-lerpaket.png>]
+treampaket.png> <./SAUER/Grafiken/Kommunikationsprotokoll/Controllerpaket.png>]
+
 Overfull \hbox (1.62788pt too wide) in paragraph at lines 63--64
 \OT1/cmr/m/n/12 Die so-ge-nan-nte "Check-sum" ist die Quer-summe des gesamten, 
 bisher gesende-
  []
 
-)) (./Geraete/Geraete.tex
+) (./SAUER/UART.tex
 Overfull \hbox (11.41528pt too wide) in paragraph at lines 65--1
 \OT1/cmr/m/n/12 Diese Ab-schnitte wer-den (noch) nicht be-nutzt und di-enen f^^
 ?ur sp^^?atere, eventuelle
  []
 
-
-Overfull \hbox (27.2418pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/17.28 verwendete Mess-ger^^?ate & En-twick-lungs-boards 
+[17]
+Overfull \hbox (32.13452pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 Die er-ste Verbindung wurde nicht ^^?uber den am Board in-te-gr
+i-erten Kommunikations-
  []
 
-) (./Quellen/Quellen.tex
+
+Overfull \hbox (17.44301pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 Chip hergestellt, son-dern ^^?uber einen han-dels^^?ublichen RS
+232-Adapter "AU002E".
+ []
+
+)) (./Geraete/Geraete.tex
+Overfull \hbox (10.93181pt too wide) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/17.28 verwendete Mess-ger^^?ate & En-twick-lungstools 
+ []
+
+<Geraete/DE10-Lite.jpg, id=345, 1070.49937pt x 824.32968pt>
+File: Geraete/DE10-Lite.jpg Graphic file (type jpg)
+<use Geraete/DE10-Lite.jpg>
+Package pdftex.def Info: Geraete/DE10-Lite.jpg  used on input line 17.
+(pdftex.def)             Requested size: 227.62204pt x 175.2778pt.
+[18]
+<Geraete/Oszi1.jpg, id=352, 2113.8975pt x 1812.7725pt>
+File: Geraete/Oszi1.jpg Graphic file (type jpg)
+<use Geraete/Oszi1.jpg>
+Package pdftex.def Info: Geraete/Oszi1.jpg  used on input line 34.
+(pdftex.def)             Requested size: 227.62204pt x 195.17351pt.
+ [19 <./Geraete/DE10-Lite.jpg>]
+<Geraete/RS232.jpg, id=358, 1304.875pt x 2229.32875pt>
+File: Geraete/RS232.jpg Graphic file (type jpg)
+<use Geraete/RS232.jpg>
+Package pdftex.def Info: Geraete/RS232.jpg  used on input line 51.
+(pdftex.def)             Requested size: 142.26378pt x 243.04985pt.
+) (./Quellen/Quellen.tex [20 <./Geraete/Oszi1.jpg>]
 Overfull \hbox (91.0373pt too wide) in paragraph at lines 5--7
 [][]\OT1/cmr/m/n/12 Ubersicht: DE10-Lite-Board: DE10-Lite[]v.2.1.0[]SystemCD: D
 E10-Lite[]User[]Manual.pdf 
@@ -697,34 +689,46 @@ Overfull \hbox (16.3725pt too wide) in paragraph at lines 8--10
 10-lite.pdf 
  []
 
-[18]
-Overfull \hbox (2.09737pt too wide) in paragraph at lines 12--13
+
+Overfull \hbox (2.09737pt too wide) in paragraph at lines 12--14
 []\OT1/cmr/m/n/12 Infos zum Trig-gern: []$\OT1/cmtt/m/n/12 https : / / www . ti
 epie . com / en / fut / edge-[]trigger$[] 
  []
 
 
-Overfull \hbox (54.91093pt too wide) in paragraph at lines 17--18
+Overfull \hbox (30.61699pt too wide) in paragraph at lines 14--15
+[]\OT1/cmr/m/n/12 UART VHDL Code: []$\OT1/cmtt/m/n/12 https : / / www . digikey
+ . com / eewiki / pages / viewpage .
+ []
+
+
+Overfull \hbox (54.91093pt too wide) in paragraph at lines 19--20
 []\OT1/cmr/bx/n/12 LTC1420C: []$\OT1/cmtt/m/n/12 https : / / www . analog . com
  / media / en / technical-[]documentation /
  []
 
-) [19] (./Dokumentation_FPGA_Oszi.aux)
+) [21 <./Geraete/RS232.jpg>] (./Dokumentation_FPGA_Oszi.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Dokumentation_FPGA_Oszi.out' has not changed
-.
-(rerunfilecheck)             Checksum: E4DBA6ADD0B3397214C3A2061764AC10;5570.
+
+Package rerunfilecheck Warning: File `Dokumentation_FPGA_Oszi.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Dokumentation_FPGA_Oszi.out':
+(rerunfilecheck)             Before: 9160CA52B519FBD4BF3B431ACBB2DDA6;6513
+(rerunfilecheck)             After:  4397906B1BB58AC173D7953C2B02E3B8;6493.
  ) 
 Here is how much of TeX's memory you used:
- 8261 strings out of 479023
- 124172 string characters out of 5863351
- 431155 words of memory out of 5000000
- 25502 multiletter control sequences out of 15000+600000
+ 8282 strings out of 479023
+ 124431 string characters out of 5863351
+ 432202 words of memory out of 5000000
+ 25514 multiletter control sequences out of 15000+600000
  409451 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,74p,977b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,13n,74p,977b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-di
@@ -734,10 +738,10 @@ c/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/
 texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Dokumentation_FPGA_Oszi.pdf (19 pages, 2257315 bytes).
+Output written on Dokumentation_FPGA_Oszi.pdf (21 pages, 4318651 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 408 words of extra memory for PDF output out of 10000 (max. 10000000)
 
