@@ -11,4 +11,4 @@ Der verwendete Adapter ist für RS232 ausgelegt, was der Vorläufer von UART ist
 	\item
 	logisch '0': zwischen 3V und 15V
 \end{itemize}
-Überraschenderweise funktionierte das Senden der Daten in die Richtung vom FPGA zum Adapter, obwohl die Pegel '1' = 0V und '0' = 3.3V nicht den Spezifikationen entsprachen. Der Chip kann die digitalen Ausgängen ausschließlich auf diese zwei Spannungen schalten.\\Hingegen die andere Richtung stellte ein Problem dar: die Hardware ist nur auf blabla Pegel ausgelegt
+Überraschenderweise funktionierte das Senden der Daten in die Richtung vom FPGA zum Adapter, obwohl die Pegel '1' = 0V und '0' = 3.3V nicht den Spezifikationen entsprachen. Der Chip kann die digitalen Ausgänge ausschließlich auf diese zwei Spannungen schalten.\\Hingegen die andere Richtung stellte ein Problem dar: An den Eingangspins des DE10-Lite boards dürfen maximal 3,3 V angelegt werden. 

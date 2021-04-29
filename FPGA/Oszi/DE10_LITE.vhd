@@ -53,6 +53,16 @@ signal reset_n   : std_logic := '1';
 
 signal ADC_CH1_value_i	: natural;
 signal ADC_CH1_value_unsig	: unsigned(11 downto 0);
+
+signal tx_ena 	: std_logic;
+signal tx_data	: STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal rx_busy	: STD_LOGIC;
+signal rx_data	: STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal tx_busy	: STD_LOGIC;
+
+signal shift 		: std_logic;
+signal shiftout 	: STD_LOGIC_VECTOR (11 DOWNTO 0);
+signal shiftin 	: STD_LOGIC_VECTOR (11 DOWNTO 0);
 ------------------------------------------------------------components
 component DataUnit is
 	port(
@@ -66,6 +76,43 @@ component DataUnit is
 		ADC_CH1_value_unsig	: out unsigned(11 downto 0)
 	);
 end component DataUnit;
+
+component uart is
+	GENERIC(
+			clk_freq	:	INTEGER;	--frequency of system clock in Hertz
+			baud_rate	:	INTEGER;		--data link baud rate in bits/second
+			os_rate		:	INTEGER;			--oversampling rate to find center of receive bits (in samples per baud period)
+			d_width		:	INTEGER; 			--data bus width
+			parity		:	INTEGER;				--0 for no parity, 1 for parity
+			parity_eo	:	STD_LOGIC			--'0' for even, '1' for odd parity
+		);			
+		PORT(
+			clk			:	IN		STD_LOGIC;										--system clock
+			reset_n		:	IN		STD_LOGIC;										--ascynchronous reset
+			tx_ena		:	IN		STD_LOGIC;										--initiate transmission
+			tx_data		:	IN		STD_LOGIC_VECTOR(d_width-1 DOWNTO 0);  --data to transmit
+			rx			:	IN		STD_LOGIC;										--receive pin
+			rx_busy		:	OUT	STD_LOGIC;										--data reception in progress
+			rx_error	:	OUT	STD_LOGIC;										--start, parity, or stop bit error detected
+			rx_data		:	OUT	STD_LOGIC_VECTOR(d_width-1 DOWNTO 0);	--data received
+			tx_busy		:	OUT	STD_LOGIC;  									--transmission in progress
+			tx			:	OUT	STD_LOGIC									--transmit pin
+		);	
+end component uart;	
+
+component shiftregister is
+	PORT(
+		clock		: IN STD_LOGIC ;
+		shiftin		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+		shiftout		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0);
+		taps0x		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0);
+		taps1x		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0);
+		taps2x		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0);
+		taps3x		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0);
+		taps4x		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0);
+		taps5x		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0)
+	);
+end component shiftregister;	
 ----------------------------------------------------------------- begin
 begin
 
@@ -77,6 +124,41 @@ dataFrontEnd: component DataUnit
 		SW            		=> SW,
 		ADC_CH1_value_unsig => ADC_CH1_value_unsig,
 		ADC_CH1_value_i 	=> ADC_CH1_value_i
+	);
+
+Communication: component uart
+	GENERIC map(
+		clk_freq	=> 50000000,	--frequency of system clock in Hertz
+		baud_rate	=> 9600,		--data link baud rate in bits/second
+		os_rate		=> 16,			--oversampling rate to find center of receive bits (in samples per baud period)
+		d_width		=> 8,			--data bus width
+		parity		=> 0,				--0 for no parity, 1 for parity
+		parity_eo	=> '0'				--'0' for even, '1' for odd parity
+	)			
+	PORT map(
+		clk			=> CLK,							--system clock
+		reset_n		=> reset_n,						--ascynchronous reset
+		tx_ena		=> tx_ena,						--initiate transmission
+		tx_data		=> tx_data,      			  --data to transmit
+		rx			=> not GPIO(34),			--receive pin (wegen inv. Pegelwandler
+		rx_busy		=> rx_busy,									--data reception in progress
+		rx_error	=> open,										--start, parity, or stop bit error detected
+		rx_data		=> rx_data,							--data received
+		tx_busy		=> tx_busy,									--transmission in progress
+		tx			=> GPIO(35)						--transmit pin
+	);	
+
+Speicher: component shiftregister
+	PORT MAP (
+		clock	 => shift,
+		shiftin	 => shiftin,
+		shiftout => shiftout,
+		taps0x	 => open,
+		taps1x	 => open,
+		taps2x	 => open,
+		taps3x	 => open,
+		taps4x	 => open,
+		taps5x	 => tap_out
 	);
 		
 

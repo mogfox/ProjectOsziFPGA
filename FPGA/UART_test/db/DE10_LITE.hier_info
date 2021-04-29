@@ -1,6 +1,5 @@
 |DE10_LITE
 MAX10_CLK1_50 => uart:Communication.clk
-MAX10_CLK1_50 => send.CLK
 MAX10_CLK1_50 => tx_data[0].CLK
 MAX10_CLK1_50 => tx_data[1].CLK
 MAX10_CLK1_50 => tx_data[2].CLK
@@ -9,10 +8,10 @@ MAX10_CLK1_50 => tx_data[4].CLK
 MAX10_CLK1_50 => tx_data[5].CLK
 MAX10_CLK1_50 => tx_data[6].CLK
 MAX10_CLK1_50 => tx_data[7].CLK
-MAX10_CLK1_50 => \Antworten:old_busy.CLK
+MAX10_CLK1_50 => send.CLK
+MAX10_CLK1_50 => \Reaktion:dtr_toggle.CLK
 KEY[0] => uart:Communication.reset_n
 KEY[0] => LEDR[0].DATAIN
-KEY[0] => send.ACLR
 KEY[0] => tx_data[0].ACLR
 KEY[0] => tx_data[1].ACLR
 KEY[0] => tx_data[2].ACLR
@@ -21,8 +20,9 @@ KEY[0] => tx_data[4].ACLR
 KEY[0] => tx_data[5].ACLR
 KEY[0] => tx_data[6].ACLR
 KEY[0] => tx_data[7].ACLR
-KEY[0] => \Antworten:old_busy.ACLR
-KEY[1] => ~NO_FANOUT~
+KEY[0] => send.ACLR
+KEY[0] => \Reaktion:dtr_toggle.ACLR
+KEY[1] => GPIO[33].DATAIN
 SW[0] => ~NO_FANOUT~
 SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
@@ -44,8 +44,7 @@ LEDR[7] <= <GND>
 LEDR[8] <= <GND>
 LEDR[9] <= <GND>
 GPIO[35] <> GPIO[35]
-GPIO[33] <> <UNC>
-GPIO[32] <> <UNC>
+GPIO[33] <> GPIO[33]
 GPIO[31] <> <UNC>
 GPIO[30] <> <UNC>
 GPIO[29] <> <UNC>

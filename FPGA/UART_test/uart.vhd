@@ -184,7 +184,7 @@ BEGIN
 						tx_state <= idle;																--return to idle state
 					END IF;
 			END CASE;
-			tx <= not tx_buffer(0);																--output last bit in transmit transaction buffer
+			tx <= tx_buffer(0);																--output last bit in transmit transaction buffer
 		END IF;
 	END PROCESS;	
 	

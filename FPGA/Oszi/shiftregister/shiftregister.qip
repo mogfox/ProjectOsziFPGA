@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "Shift register (RAM-based)"
+set_global_assignment -name IP_TOOL_VERSION "20.1"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{MAX 10}"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "shiftregister.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "shiftregister.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "shiftregister_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "shiftregister.cmp"]

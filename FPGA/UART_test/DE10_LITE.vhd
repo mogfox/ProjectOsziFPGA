@@ -52,6 +52,7 @@ signal reset_n   : std_logic := '1';
 
 signal send   	: std_logic;
 signal rx_busy  : std_logic;
+signal tx_busy	: std_logic;
 signal tx_data 	: std_logic_vector(7 downto 0);
 signal rx_data	: std_logic_vector(7 downto 0);
 
@@ -81,29 +82,52 @@ end component uart;
 begin
 reset_n <= KEY(0);
 LEDR(0) <= reset_n;
-
-Antworten:
+GPIO(33) <= not KEY(1);
+Reaktion:
 process(reset_n, CLK)
-variable old_busy : std_logic;
+variable dtr_toggle : std_logic;
 
 begin
 	IF(reset_n = '0') THEN
-		tx_data <= "00000000";
-		old_busy := '0';
 		send <= '0';
-	ELSIF(CLK'EVENT AND CLK = '0') THEN
-		if(old_busy = '1' and rx_busy = '0') then
-			old_busy := '0';
-			tx_data <= rx_data;
+		tx_data <= "00000000";
+		dtr_toggle := '0';
+	ELSIF(CLK'EVENT AND CLK = '1') THEN
+		if(GPIO(32) = '1' and tx_busy = '0' and dtr_toggle = '0') then
 			send <= '1';
-		elsif(rx_busy = '1') then
-			old_busy := '1';
+			tx_data <= "01111110";
+			dtr_toggle := '1';
+		elsif(dtr_toggle = '1') then
+			if(GPIO(32) = '0') then
+				dtr_toggle := '0';
+			end if;
 			send <= '0';
-		else 
+		else
 			send <= '0';
 		end if;
 	END IF;
 end process;
+--Antworten:
+--process(reset_n, CLK)
+--variable old_busy : std_logic;
+--begin
+--	IF(reset_n = '0') THEN
+--		tx_data <= "00000000";
+--		old_busy := '0';
+--		send <= '0';
+--	ELSIF(CLK'EVENT AND CLK = '0') THEN
+--		if(old_busy = '1' and rx_busy = '0') then
+--			old_busy := '0';
+--			tx_data <= rx_data;
+--			send <= '1';
+--		elsif(rx_busy = '1') then
+--			old_busy := '1';
+--			send <= '0';
+--		else 
+--			send <= '0';
+--		end if;
+--	END IF;
+--end process;
 
 --Sending:
 --process(CLK)
@@ -141,13 +165,13 @@ Communication: component uart
 	PORT map(
 		clk			=> CLK,							--system clock
 		reset_n		=> reset_n,						--ascynchronous reset
-		tx_ena		=> send,										--initiate transmission
+		tx_ena		=> send,						--initiate transmission
 		tx_data		=> tx_data,      			  --data to transmit
-		rx			=> GPIO(34),									--receive pin
+		rx			=> not GPIO(34),			--receive pin (wegen inv. Pegelwandler
 		rx_busy		=> rx_busy,									--data reception in progress
 		rx_error	=> open,										--start, parity, or stop bit error detected
 		rx_data		=> rx_data,							--data received
-		tx_busy		=> open,									--transmission in progress
+		tx_busy		=> tx_busy,									--transmission in progress
 		tx			=> GPIO(35)						--transmit pin
 	);	
 

@@ -36,6 +36,8 @@ signal ADC_CH1_value_unsig_s : unsigned(11 downto 0);
 signal ADC_CH1_value_i_s : natural;
 signal trigger_mode : trigger_types;
 
+signal trigger_sig : std_logic;
+
 component ADCinterface is
 	port(
 		RESET_n			:  in std_logic;	--master reset
@@ -106,7 +108,7 @@ Trigger1: component trigger
 		trigger_hyst_i		=> 50,
 		trigger_mode		=> trigger_mode,
 		
-		trigger				=> GPIO(35)
+		trigger				=> trigger_sig
 	);
 	
 end rtl;

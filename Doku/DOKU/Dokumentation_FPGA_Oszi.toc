@@ -23,26 +23,30 @@
 \contentsline {paragraph}{Modus: Any Edge}{13}{section*.4}%
 \contentsline {paragraph}{Schwellwert, Hysterese und Modi}{13}{section*.5}%
 \contentsline {subsubsection}{\numberline {2.5.3}VHDL-Design-Unit}{14}{subsubsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.4}Design-Unit Test}{14}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.4}Design-Unit Simulation}{14}{subsubsection.2.5.4}%
 \contentsline {paragraph}{Generelles}{14}{section*.6}%
 \contentsline {paragraph}{Simulation}{14}{section*.7}%
-\contentsline {subsection}{\numberline {2.6}Kommunikationsprotokoll}{15}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Projektteilbereich Übersicht}{15}{subsubsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Paketspezifikation FPGA zu UserInterface}{15}{subsubsection.2.6.2}%
-\contentsline {subsubsection}{\numberline {2.6.3}Paketspezifikation UserInterface zu FPGA}{15}{subsubsection.2.6.3}%
-\contentsline {subsubsection}{\numberline {2.6.4}Messbereichseinstellung}{15}{subsubsection.2.6.4}%
-\contentsline {subsubsection}{\numberline {2.6.5}Zeitbereichseinstellung}{16}{subsubsection.2.6.5}%
-\contentsline {subsubsection}{\numberline {2.6.6}Messdaten}{17}{subsubsection.2.6.6}%
-\contentsline {subsubsection}{\numberline {2.6.7}Checksum}{17}{subsubsection.2.6.7}%
-\contentsline {subsubsection}{\numberline {2.6.8}frei / not used}{17}{subsubsection.2.6.8}%
-\contentsline {subsection}{\numberline {2.7}UART - Verbindung FPGA \& UserInterface}{18}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}Projektteilbereich Übersicht}{18}{subsubsection.2.7.1}%
-\contentsline {subsubsection}{\numberline {2.7.2}erste Verbindung}{18}{subsubsection.2.7.2}%
-\contentsline {paragraph}{Pegelanpassung}{18}{section*.8}%
-\contentsline {section}{\numberline {3}verwendete Messgeräte \& Entwicklungstools}{19}{section.3}%
-\contentsline {subsection}{\numberline {3.1}DE10-Lite Board}{19}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Oszilloskop 1}{20}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}RS232-Adapter}{21}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Quellen und Hilfsmittel}{21}{section.4}%
-\contentsline {paragraph}{Verwendung des DE10-Lite-Boards \& VHDL-Programmierung:}{21}{section*.9}%
-\contentsline {paragraph}{Datenblätter:}{21}{section*.10}%
+\contentsline {subsubsection}{\numberline {2.5.5}Trigger Praxistest}{15}{subsubsection.2.5.5}%
+\contentsline {paragraph}{Messaufbau}{15}{section*.8}%
+\contentsline {paragraph}{Messerkenntnisse}{16}{section*.9}%
+\contentsline {subsection}{\numberline {2.6}Kommunikationsprotokoll}{16}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Projektteilbereich Übersicht}{16}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Paketspezifikation FPGA zu UserInterface}{17}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Paketspezifikation UserInterface zu FPGA}{17}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Messbereichseinstellung}{17}{subsubsection.2.6.4}%
+\contentsline {subsubsection}{\numberline {2.6.5}Zeitbereichseinstellung}{18}{subsubsection.2.6.5}%
+\contentsline {subsubsection}{\numberline {2.6.6}Messdaten}{19}{subsubsection.2.6.6}%
+\contentsline {subsubsection}{\numberline {2.6.7}Checksum}{19}{subsubsection.2.6.7}%
+\contentsline {subsubsection}{\numberline {2.6.8}frei / not used}{19}{subsubsection.2.6.8}%
+\contentsline {subsection}{\numberline {2.7}UART - Verbindung FPGA \& UserInterface}{20}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Projektteilbereich Übersicht}{20}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}erste Verbindung}{20}{subsubsection.2.7.2}%
+\contentsline {paragraph}{Pegelanpassung}{20}{section*.10}%
+\contentsline {section}{\numberline {3}verwendete Messgeräte \& Entwicklungstools}{21}{section.3}%
+\contentsline {subsection}{\numberline {3.1}DE10-Lite Board}{21}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Oszilloskop 1}{22}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Funktionsgenerator 1}{23}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}RS232-Adapter}{24}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Quellen und Hilfsmittel}{24}{section.4}%
+\contentsline {paragraph}{Verwendung des DE10-Lite-Boards \& VHDL-Programmierung:}{24}{section*.11}%
+\contentsline {paragraph}{Datenblätter:}{24}{section*.12}%

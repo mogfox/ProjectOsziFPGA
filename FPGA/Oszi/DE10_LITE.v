@@ -27,10 +27,6 @@ module DE10_LITE(
 	//////////// SW //////////
 	input 		     [9:0]		SW,
 
-	//////////// Arduino //////////
-	inout 		    [15:0]		ARDUINO_IO,
-	inout 		          		ARDUINO_RESET_N,
-
 	//////////// GPIO, GPIO connect to GPIO Default //////////
 	inout 		    [35:0]		GPIO
 );

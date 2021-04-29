@@ -77,3 +77,45 @@ Im abgebildeten Zeitdiagramm (Figure \ref{TriggerSim}) ist eine der Simulationen
 	\end{center}
 \end{figure}
 \subsubsection{Trigger Praxistest}
+Zusätzlich zur Simulation wurde der Trigger mit einem Messaufbau (\ref{Messaufbau_Trigger}) getestet.
+\paragraph{Messaufbau}
+An den externen ADC auf der Platine \textit{Prototyp 1} (siehe: \ref{Prototype1}) wurden verschiedene Signale angelegt. Hier zu sehen ist ein 500 kHz Rechtecksignal mit einer Amplitude von ca. 4 Vpp, das auf beide Flanken getriggert wird. Die Trigger-Leitung im FPGA ist über einen GPIO (GPIO(35)) herausgeführt und wird ebenfalls am Oszilloskop aufgezeichnet. Es wurden alle 3 Triggermodi durchgetestet.
+\begin{center}
+\begin{tabular}{l|l}
+	Gerät & Referenz\\
+	\hline \hline
+	Oszilloskop 1 & \ref{Oszi1}\\
+	\hline
+	Funktionsgenerator 1 & \ref{Funktionsgen1}\\
+	\hline
+	Prototyp 1 & \ref{Prototype1}\\
+	\hline
+	FPGA & \ref{DE10-Lite}\\
+\end{tabular}
+\end{center}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=12cm]{SAUER/Grafiken/Trigger/Messaufbau.png}
+		\caption{Messaufbau Triggertest}
+		\label{Messaufbau_Trigger}
+	\end{center}
+\end{figure}
+\paragraph{Messerkenntnisse}
+Der Praxistest ergab, dass die Trigger-Unit korrekt funktioniert, obwohl dies auf den ersten Blick nicht danach aussieht. Das Bild \ref{Messung_Trigger} zeigt das Messergebnis am Bildschirm des Oszilloskopes, unter den in "Messaufbau" spezifizierten Umständen. Es ist zu sehen, dass sowohl der Trigger für die \textit{rising edge}, als auch für die \textit{falling edge} um etwa 390 ns zu spät am Bildschirm erscheint.
+\\Die Erklärung hierzu ist einfach, wenn man sich die Timing-Diagramme ansieht. Wie in der Grafik \ref{Timing_Diagramm} aus dem Datenblatt zu sehen, benötigt der ADC ca. $t_{delay} = 270 ns$. Hier hinzu kommen noch zwei Taktzyklen des FPGAs, was 40ns gesamt sind, für den internen Auslösemechanismus. Die restlichen 60ns sind auf Signallaufzeiten und Messfehler zurückzuführen.
+\\$t_{conv} = 70ns$\\$t_{clock} = \frac{1}{10MHz} = 100ns$\\$t{delay} = t_{conv} + 2 \cdot t_{clock} = 70 + 2 \cdot 100 = 270 ns$
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=8cm]{SAUER/Grafiken/Trigger/Trigger_Oszi.jpg}
+		\caption{Trigger-Test Oszilloskop1}
+		\label{Messung_Trigger}
+	\end{center}
+\end{figure}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=8cm]{SAUER/Grafiken/Trigger/ADC_timing_diagram.PNG}
+		\caption{Timing-Diagram ADC}
+		\label{Timing_Diagramm}
+	\end{center}
+\end{figure}
